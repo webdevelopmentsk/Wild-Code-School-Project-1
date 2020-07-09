@@ -1,0 +1,166 @@
+
+.nav__bar{
+    background-color: $c-white;
+}
+.logo--box{
+    padding: 0.5rem 0;
+}
+.logo--text{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.nav--box{
+    padding: 1rem 2rem;
+}
+.nav--list{
+list-style: none;
+}
+.nav--item{
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color:$c-black-1;
+
+    &--link{
+        &, &:link,&:visited{
+        text-decoration: none;
+        transition: all .2s ease-in;
+        color: inherit;
+        }     
+    }
+
+    &:hover{
+        background-color: $c-black-2;
+        color:$c-white;
+        box-shadow: 0 0.5rem 1rem rgba($c-black-1,.2);
+    }
+    &:active, &:focus{
+        background-color: $c-black-2;
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba($c-black-1,.2);
+    }
+
+}
+.header{
+
+    background-image: linear-gradient(to right bottom, rgba($c-black-1,.4),rgba($c-black-2,.4)),
+    url(../img/header.jpg);
+    background-size: cover;
+
+    &__box{
+    text-align: center; 
+    }
+    &__text{
+    font-size: 2rem;
+    color: $c-white;
+    margin: 2rem 0;
+    }
+}
+
+.about__box1{
+    background-image: url(../img/about.jpg);
+    background-size:cover;
+}
+.about__box2{
+    background-image: url(../img/about.jpg);
+    background-size:cover;
+}
+.sect__feedback{
+    background-image:url(../img/feedback.jpg);
+    background-size:cover;
+
+}
+.feedback--box{
+margin-bottom: 3rem;
+}
+.feedback--card{
+    padding: 0 2rem;
+    margin: 3rem 3rem;
+    border: 8px solid $c-black-2;
+    box-shadow: 0 3rem 6rem rgba($c-black-1,.2);
+    &__photo-box{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 2rem 0;
+    }
+    &__name{
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+    &__text{
+        font-size: 1.5rem;
+    }
+    &:hover{
+        transform: translateY(-3px) scale(1.1);
+    }
+}
+.student__img{
+    width:100%;
+}
+.footer{
+    background-image: linear-gradient(to right bottom, rgba($c-green-1,.4),rgba($c-green-2,.4)),
+    url(../img/header.jpg);
+}
+
+.contact--card{
+    padding: 2rem 2rem;
+    margin: 3rem 3rem;
+    border: 2px solid $c-black-1;
+    box-shadow: 0 3rem 6rem rgba($c-black-1,.2);
+
+    
+    &__photo-box{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 2rem 0;
+    }
+    &__name{
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        }
+    &__text{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    &:hover{
+        transform: translateY(-3px) scale(1.1);
+    }
+}
+.contact--card__icon{
+    &--box{
+        font-size: 2.5rem;
+        color: $c-black-1;
+        margin: 1rem;
+    }
+    &--link{
+        text-align: center;
+        text-decoration: none;
+    }
+}
+.fa {
+
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 .5rem;
+  }
+  .fa:hover {
+    opacity: 0.7;
+}
+.fa-github, .fa-facebook,.fa-linkedin, .fa-skype, .fa-envelope{
+    color: $c-black-2;
+}
+
+
+  

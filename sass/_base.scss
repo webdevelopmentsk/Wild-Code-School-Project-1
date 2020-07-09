@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    @include rwd(tab-landscape){font-size: 52.25%;}
+    @include rwd(tab-portrait){font-size: 52.25%;}
+    @include rwd(tab-landscape){font-size: 50%;}
+    @include rwd(phone){font-size: 50%;}
+    @include rwd(big-desktop){font-size: 75%;}
+}
+body{
+    font-family: 'Poppins';
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+.heading{
+    text-transform: uppercase;
+    &--h1{
+        font-size: $font-h1;
+        color: $c-white;
+        text-transform: uppercase;
+    
+    }
+    &--h2{
+        font-size: $font-h2;
+        color:$c-black-1;
+        font-weight: 600;
+    }
+    &--h5{
+        font-size: $font-h5;
+        color:$c-black-1;
+        font-weight: 600;
+    }
+}
+.paragraph{
+    font-size: $font-p;
+    padding: 1rem 2rem;
+    
+    &--dark{
+        color: $c-black-1;
+    }
+    &--light{
+        color: $c-white;
+    }
+}

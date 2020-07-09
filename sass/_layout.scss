@@ -1,0 +1,103 @@
+
+/* Old Fixed Navigation Bar
+.nav__bar{
+    flex: 0 0 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    position:fixed; top:0; left: 0;right: 0;
+    z-index: 100;
+    }
+    .nav--list{
+    display: flex;
+    }
+    .logo--box{
+    flex: 0 1 25%;
+    }
+    
+    .nav--box{
+    flex: 0 1 75%;
+    }
+*/
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main{
+    flex: 0 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.header{
+    flex: 0 1 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    
+    @include rwd(tab-landscape){height: 100vh;}
+
+    &__box{
+    flex: 0 1 80%;
+    align-self: center;
+    }
+}
+.sect__about{
+    flex: 0 1 100%;
+    display: flex;
+}
+.about__box1{
+    flex: 0 1 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__box2{
+    flex: 0 1 50%;
+    height: auto;
+}
+
+.sect__feedback{
+    flex: 0 1 100%;
+}
+.feedback--box{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.feedback--card{
+    flex: 0 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.student__img{
+    height:100%;
+}
+
+.footer
+{
+    width: 100%;
+}
+.sect__contact{
+    width: 100%;
+}
+.contact--box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.contact--card{
+    flex: 0 1 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
