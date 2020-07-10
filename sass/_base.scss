@@ -10,11 +10,6 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
-    @include rwd(tab-landscape){font-size: 52.25%;}
-    @include rwd(tab-portrait){font-size: 52.25%;}
-    @include rwd(tab-landscape){font-size: 50%;}
-    @include rwd(phone){font-size: 50%;}
-    @include rwd(big-desktop){font-size: 75%;}
 }
 body{
     font-family: 'Poppins';

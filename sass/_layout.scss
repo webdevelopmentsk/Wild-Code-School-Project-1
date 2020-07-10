@@ -36,8 +36,6 @@
     height: 80vh;
     display: flex;
     justify-content: center;
-    
-    @include rwd(tab-landscape){height: 100vh;}
 
     &__box{
     flex: 0 1 80%;
@@ -73,7 +71,7 @@
 }
 
 .feedback--card{
-    flex: 0 80%;
+    flex: 0 45%;
     display: flex;
     flex-direction: column;
     align-items: center;

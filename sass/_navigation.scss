@@ -77,20 +77,20 @@
             }
         }
         
-        &:hover,
-        &:active ~ &__background {
+        &:hover{
             background-position: 100%;
             color: $c-black-1;
             transform: translateX(1rem);
-            z-index: 1;
-            transform: scale(0);
+        }
+        &:active, &:visited{
+           
         }
     }
 
 
     //FUNCTIONALITY
     &__checkbox:checked ~ &__background {
-        transform: scale(80);
+        transform: scale(200);
     }
 
     &__checkbox:checked ~ &__nav {
