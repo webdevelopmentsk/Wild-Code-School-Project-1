@@ -258,10 +258,13 @@ a {
     transform: translateY(-3px) scale(1.1); }
 
 .student__img {
-  width: 100%; }
+  height: 100%; }
 
 .footer {
   background-image: linear-gradient(to right bottom, rgba(120, 216, 120, 0.4), rgba(96, 192, 96, 0.4)), url(../img/header.jpg); }
+
+.contact__img {
+  width: 100%; }
 
 .contact--card {
   padding: 2rem 2rem;
@@ -331,7 +334,7 @@ a {
   right: 3.5rem;
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-  background-image: url(../img/feedback.jpg);
+  background-image: url(../img/navigation.jpg);
   background-size: cover; }
 
 .navigation__nav {
@@ -444,3 +447,120 @@ a {
   font-size: 1.5rem;
   color: #000000;
   border: 2px solid #000a15; }
+
+.sawi-header {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 900;
+  flex: 1 1 100%;
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 10, 21, 0.4)), url(../img/sawi-1.jpg);
+  background-size: cover; }
+  .sawi-header__box {
+    position: absolute;
+    top: 5rem;
+    left: 20rem;
+    text-align: center; }
+  .sawi-header__text {
+    font-size: 3rem;
+    color: #FFFFFF;
+    margin: 2rem 0; }
+
+.line {
+  flex: 0 0 30%;
+  width: 40%;
+  height: 0.3rem;
+  margin: 0 auto; }
+  .line--light {
+    background-color: #FFFFFF; }
+  .line--dark {
+    background-color: #000000; }
+
+.sect__havedone {
+  width: 1 1 100%;
+  background-image: url(../img/about.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+
+.sect__head {
+  width: 100vw; }
+
+.job__card {
+  margin-bottom: 2rem;
+  width: 65%;
+  height: auto;
+  border: 4px solid #000000;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+
+.job__img {
+  width: 25%;
+  margin: 1rem 3rem; }
+  .job__img--content {
+    width: 100%; }
+
+.job__detail {
+  width: 60%;
+  margin: 1rem 3rem; }
+
+.job__name {
+  font-size: 2.5rem;
+  font-weight: 500; }
+
+.job__period {
+  font-size: 2rem; }
+
+.job__company {
+  font-size: 2.2rem;
+  color: #005073; }
+  .job__company--link, .job__company--link:link, .job__company--link:visited {
+    color: #005073;
+    margin: 0.5rem 0; }
+
+.job__task {
+  font-size: 2rem; }
+
+.project__card {
+  margin-bottom: 2rem;
+  width: 65%;
+  height: auto;
+  border: 4px solid #000000;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+
+.project__img {
+  width: 25%;
+  margin: 1rem 3rem; }
+  .project__img--content {
+    width: 100%; }
+
+.project__detail {
+  width: 60%;
+  margin: 1rem 3rem; }
+
+.project__name {
+  font-size: 2.5rem;
+  font-weight: 500; }
+
+.project__period {
+  font-size: 2rem; }
+
+.project__company {
+  font-size: 2.2rem;
+  color: #005073; }
+  .project__company--link, .project__company--link:link, .project__company--link:visited {
+    color: #005073;
+    margin: 0.5rem 0; }
+
+.project__task {
+  font-size: 2rem; }

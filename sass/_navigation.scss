@@ -27,7 +27,7 @@
         //background-image: radial-gradient($c-blue-1, $c-blue-2);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
-        background-image:url(../img/feedback.jpg);
+        background-image:url(../img/navigation.jpg);
         background-size: cover;
     }
 
@@ -81,9 +81,6 @@
             background-position: 100%;
             color: $c-black-1;
             transform: translateX(1rem);
-        }
-        &:active, &:visited{
-           
         }
     }
 
