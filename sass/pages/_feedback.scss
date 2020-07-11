@@ -1,0 +1,21 @@
+.feedback-header{
+    
+    font-family: 'Comfortaa', cursive;
+    font-weight: 900;
+    flex: 1 1 100%;
+    //width: 100vw;
+    position: relative;
+    background-image: linear-gradient(to right bottom, rgba($c-black-1,0.2),rgba($c-black-2,0.4)),
+    url(../img/feedback-header.jpg);
+    background-size: cover;
+    &__box{
+        position: absolute;
+        top: 5rem; left:20rem;
+        text-align: center; 
+    }
+    &__text{
+        font-size: 3rem;
+        color: $c-white;
+        margin: 2rem 0;
+    }
+}

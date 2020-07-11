@@ -261,7 +261,7 @@ a {
   height: 100%; }
 
 .footer {
-  background-image: linear-gradient(to right bottom, rgba(120, 216, 120, 0.4), rgba(96, 192, 96, 0.4)), url(../img/header.jpg); }
+  background-image: url(../img/contact.jpg); }
 
 .contact__img {
   width: 100%; }
@@ -564,3 +564,20 @@ a {
 
 .project__task {
   font-size: 2rem; }
+
+.feedback-header {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 900;
+  flex: 1 1 100%;
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 10, 21, 0.4)), url(../img/feedback-header.jpg);
+  background-size: cover; }
+  .feedback-header__box {
+    position: absolute;
+    top: 5rem;
+    left: 20rem;
+    text-align: center; }
+  .feedback-header__text {
+    font-size: 3rem;
+    color: #FFFFFF;
+    margin: 2rem 0; }
