@@ -1,50 +1,3 @@
-
-.nav__bar{
-    background-color: $c-white;
-}
-.logo--box{
-    padding: 0.5rem 0;
-}
-.logo--text{
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-.nav--box{
-    padding: 1rem 2rem;
-}
-.nav--list{
-list-style: none;
-}
-.nav--item{
-    margin: 0 1rem;
-    padding: 1rem 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color:$c-black-1;
-
-    &--link{
-        &, &:link,&:visited{
-        text-decoration: none;
-        transition: all .2s ease-in;
-        color: inherit;
-        }     
-    }
-
-    &:hover{
-        background-color: $c-black-2;
-        color:$c-white;
-        box-shadow: 0 0.5rem 1rem rgba($c-black-1,.2);
-    }
-    &:active, &:focus{
-        background-color: $c-black-2;
-        transform: translateY(-1px);
-        box-shadow: 0 0.5rem 1rem rgba($c-black-1,.2);
-    }
-
-}
 .header{
 
     background-image: linear-gradient(to right bottom, rgba($c-black-1,.4),rgba($c-black-2,.4)),
@@ -102,8 +55,6 @@ margin-bottom: 3rem;
     height:100%;
 }
 .footer{
-    //background-image: linear-gradient(to right bottom, rgba($c-black-1,.2),rgba($c-black-2,.2)),
-    //url(../img/contact.jpg);
     background-image:url(../img/contact.jpg);
 }
 

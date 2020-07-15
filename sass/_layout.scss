@@ -10,6 +10,7 @@
     display: flex;
     flex-wrap: wrap;
 }
+
 .header{
     flex: 0 1 100%;
     display: flex;
@@ -18,6 +19,12 @@
     &__box{
     flex: 0 1 100%;
     align-self: center;
+    }
+    &-home{
+        height: 85vh;
+    }
+    &-feedback{
+        height: 75vh;
     }
     &-sawi{
         flex: 1 1 100%;
@@ -36,6 +43,7 @@
         display: flex;
     }
 }
+
 
 .sect__about{
     flex: 0 1 100%;
