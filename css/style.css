@@ -136,10 +136,15 @@ a {
     height: 75vh; }
   .header-sawi {
     flex: 1 1 100%;
-    height: 75vh;
-    display: flex; }
+    height: auto;
+    display: flex;
+    align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .header-sawi {
+        height: 50vh; } }
     .header-sawi__box {
-      flex: 1 1 100%;
+      flex: 1 0 20%;
+      height: auto;
       display: flex;
       flex-direction: column;
       align-items: center; }
@@ -153,13 +158,21 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 2rem; }
+  padding: 5rem 2rem; }
   .sect__about-sawi {
     flex: 1 1 100%;
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
     .sect__about-sawi__box {
-      flex: 1 1 10%; }
+      flex: 0 1 25%; }
+      .sect__about-sawi__box--1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+      @media only screen and (max-width: 37.5em) {
+        .sect__about-sawi__box--1, .sect__about-sawi__box--2, .sect__about-sawi__box--3, .sect__about-sawi__box--4 {
+          flex: 0 1 100%; } }
 
 .about__box {
   flex: 0 0 30%;
@@ -317,31 +330,101 @@ a {
   transform: rotate(-135deg); }
 
 .btn, .btn:link, .btn:visited {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 1rem 2rem;
   border: none;
   cursor: pointer;
   transition: all .3s; }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  transform: translateY(-3px); }
 
 .btn:active, .btn:focus {
   outline: none;
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  transform: translateY(-1px); }
 
 .btn--black {
   font-size: 2rem;
   background-color: #000000;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--transparent {
   font-size: 1.5rem;
-  color: #000000;
-  border: 2px solid #000a15; }
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  background-color: transparent; }
+
+.card-sawi {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 100%; }
+  .card-sawi__side {
+    height: 100%;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card-sawi__side--front {
+      background-color: #FFFFFF; }
+    .card-sawi__side--back {
+      transform: rotateY(180deg); }
+      .card-sawi__side--back-2 {
+        background-image: linear-gradient(to right bottom, #B99976, #987554); }
+      .card-sawi__side--back-3 {
+        background-image: linear-gradient(to right bottom, #B99976, #987554); }
+      .card-sawi__side--back-4 {
+        background-image: linear-gradient(to right bottom, #B99976, #987554); }
+  .card-sawi:hover .card-sawi__side--front {
+    transform: rotateY(-180deg); }
+  .card-sawi:hover .card-sawi__side--back {
+    transform: rotateY(0); }
+  .card-sawi__picture {
+    background-size: cover;
+    height: 70%;
+    background-blend-mode: screen; }
+    .card-sawi__picture--2 {
+      background-image: linear-gradient(to right bottom, #987554, #420D09), url(../img/coding.jpg); }
+    .card-sawi__picture--3 {
+      background-image: linear-gradient(to right bottom, #987554, #420D09), url(../img/painting.jpg); }
+    .card-sawi__picture--4 {
+      background-image: linear-gradient(to right bottom, #987554, #420D09), url(../img/traveling.jpg); }
+  .card-sawi__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #420D09;
+    position: absolute;
+    top: 80%;
+    width: 100%; }
+  .card-sawi__details {
+    padding: 3rem; }
+    .card-sawi__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      @media only screen and (max-width: 75em) {
+        .card-sawi__details ul {
+          width: 100%; } }
+      .card-sawi__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card-sawi__details ul li:not(:last-child) {
+          border-bottom: 1px solid #000a15; }
+  .card-sawi__cta {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center; }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 10, 21, 0.4)), url(../img/header.jpg);
@@ -451,25 +534,41 @@ a {
   color: #000a15; }
 
 .header-sawi {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 10, 21, 0.3)), url(../img/sawi-header.jpg);
+  padding: 5rem 0;
+  background-color: #B99976;
   background-size: cover; }
   .header-sawi__box {
     text-align: center;
-    margin-top: 3rem; }
+    padding: 2rem;
+    background-color: #ecdbc3; }
+    @media only screen and (max-width: 56.25em) {
+      .header-sawi__box--1 {
+        display: none; } }
+    @media only screen and (max-width: 37.5em) {
+      .header-sawi__box--1 {
+        display: none; } }
+    @media only screen and (max-width: 56.25em) {
+      .header-sawi__box--3 {
+        display: none; } }
+    @media only screen and (max-width: 37.5em) {
+      .header-sawi__box--3 {
+        display: none; } }
   .header-sawi__text {
-    font-size: 6rem;
-    font-weight: 100;
+    font-size: 4rem;
+    font-weight: 400;
     line-height: 2;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
-    color: #FFFFFF;
-    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    color: #420D09;
+    font-family: 'Old Standard TT', 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-stretch: expanded;
+    margin-top: 2rem;
     animation: moveInLeft 1s ease-in; }
   .header-sawi__photo-box {
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
-    border: solid 3px rgba(255, 255, 255, 0.8);
+    border: solid 2px #420D09;
     overflow: hidden;
     background-image: url(../img/sawi-3.jpg);
     background-size: cover;
@@ -477,66 +576,70 @@ a {
     .header-sawi__photo-box:hover {
       transform: translateY(-3px) scale(1.1); }
   .header-sawi__h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Old Standard TT','Playfair Display', serif;
     font-size: 2rem;
     line-height: 3;
     font-weight: 100;
     letter-spacing: 1px;
-    color: #FFFFFF;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+    color: #000000;
+    margin-bottom: 2rem;
     animation: moveInLeft 1s ease-in; }
+  .header-sawi__photo--nature {
+    width: 50%;
+    height: 60%;
+    margin: 3rem 0; }
 
 .sect__about-sawi {
-  background-color: #FFB6C1; }
+  background-image: url(../img/sawi-about-2.jpg);
+  padding: 5rem 0; }
   .sect__about-sawi__box {
-    height: 30rem;
-    width: 20rem;
+    height: 35rem;
     font-size: 3rem;
     color: #000a15;
-    border: solid 2px #FFFFFF;
-    margin: 2rem;
-    padding: 4rem;
+    border-radius: 3px;
+    margin: 4rem 2rem;
+    padding: 0 2rem;
     text-align: center; }
     .sect__about-sawi__box--1 {
-      background-color: #FFB6C1; }
-    .sect__about-sawi__box--2 {
-      background-image: url(../img/coding.jpg);
-      background-size: cover; }
-    .sect__about-sawi__box--3 {
-      background-image: url(../img/painting.jpg);
-      background-size: cover; }
-    .sect__about-sawi__box--4 {
-      background-image: url(../img/teaching.jpg);
-      background-size: cover; }
+      background-color: #987554; }
 
 .sect__havedone {
-  width: 1 1 100%;
+  flex: 1 1 100%;
+  padding: 5rem 0;
   height: auto;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(0, 10, 21, 0.1)), url(../img/sawi-things.jpg);
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-evenly; }
 
-.sect__head {
-  width: 100vw; }
+.sect__havedone__head {
+  flex: 0 1 25%;
+  background-color: #B99976;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 7rem 0;
+  outline: 1.5rem solid #987554;
+  outline-offset: 15px;
+  padding: 3rem; }
 
 .project__card {
-  margin-bottom: 2rem;
-  width: 45%;
+  flex: 0 0 27%;
+  background-image: linear-gradient(to right bottom, #987554, #B99976);
+  margin: 3rem 2rem;
   height: auto;
-  border: 4px solid #000000;
+  border-radius: 3px;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
-  padding: 1.5rem; }
-
-.project__img {
-  flex: 0 0 100%;
-  margin: 1rem 3rem; }
-  .project__img--content {
-    width: 100%; }
+  padding: 1.5rem;
+  display: flex; }
 
 .project__detail {
+  color: #ecdbc3;
   flex: 0 0 100%;
-  margin: 1rem 3rem; }
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column; }
 
 .project__name {
   font-size: 2rem;
@@ -547,19 +650,38 @@ a {
   font-size: 1.5rem; }
 
 .project__period {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  margin-bottom: 2rem; }
 
 .project__company {
-  font-size: 2rem;
-  color: #005073;
-  margin-bottom: 2rem; }
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #005073; }
   .project__company--link, .project__company--link:link, .project__company--link:visited {
-    color: #005073;
+    color: #ecdbc3;
     margin: 0.5rem 0; }
+  .project__company--link:hover {
+    background-color: #B99976;
+    padding: 0.5rem 0.1rem;
+    color: #420D09; }
+  .project__company--link:active, .project__company--link:focus {
+    background-color: #000000;
+    color: #FFFFFF; }
 
 .project__task {
+  color: #420D09;
   font-size: 1.5rem;
-  text-align: justify; }
+  text-align: normal;
+  margin-bottom: 2rem;
+  background-color: #ecdbc3;
+  padding: 2rem;
+  border-radius: 4px; }
+
+.project__img {
+  flex: 0 0 100%;
+  margin: 1rem 3rem; }
+  .project__img--content {
+    width: 100%; }
 
 .header-feedback {
   font-family: 'Comfortaa', cursive;

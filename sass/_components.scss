@@ -1,8 +1,8 @@
 //button
 .btn{
  &,&:link, &:visited{
-   margin-top: 3rem;
-   margin-bottom: 3rem;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
    padding: 1rem 2rem;
       //for btn
       border:none;
@@ -13,21 +13,146 @@
  }
  &:hover{
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba($c-black-1,.2);
  }
  &:active, &:focus{
     outline: none;
     transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba($c-black-1,.2);
  }
  &--black{
     font-size: 2rem;
     background-color:$c-black-1;
     color:$c-white;
+    box-shadow: 0 0.5rem 1rem rgba($c-black-1,.2);
  }
  &--transparent{
     font-size: 1.5rem;
-    color:$c-black-1;
-    border: 2px solid $c-black-2;
+    color:$c-white;
+    border: 2px solid $c-white;
+    background-color:transparent;
  }
+
+}
+
+
+//sawi's cards
+.card-sawi {
+
+   // FUNCTIONALITY
+   perspective: 150rem;
+   -moz-perspective: 150rem;
+   position: relative;
+   height: 100%;
+   
+   &__side {
+       height: 100%;
+       transition: all .8s ease;
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       -webkit-backface-visibility: hidden;
+       backface-visibility: hidden;
+       border-radius: 3px;
+       overflow: hidden;
+       box-shadow: 0 1.5rem 4rem rgba($c-black-1, .15);
+
+       &--front {
+           background-color: $c-white;
+       }
+
+       &--back {
+           transform: rotateY(180deg);
+
+           &-2 {
+               background-image: linear-gradient(to right bottom, $c-brown-2, $c-brown-3);
+           }
+
+           &-3 {
+            background-image: linear-gradient(to right bottom, $c-brown-2, $c-brown-3);
+           }
+
+           &-4 {
+            background-image: linear-gradient(to right bottom, $c-brown-2, $c-brown-3);
+           }
+       }
+   }
+ 
+
+   &:hover &__side--front {
+       transform: rotateY(-180deg);
+   }
+
+   &:hover &__side--back {
+       transform: rotateY(0);
+   }
+
+
+   // FRONT SIDE STYLING
+   &__picture {
+       background-size: cover;
+       height: 70%;
+       background-blend-mode: screen;
+       //-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+       //clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+       //border-top-left-radius: 3px;
+       //border-top-right-radius: 3px;
+       
+       &--2 {
+           background-image: linear-gradient(to right bottom, $c-brown-3, $c-mahogany), 
+           url(../img/coding.jpg);
+       }
+
+       &--3 {
+         background-image: linear-gradient(to right bottom, $c-brown-3, $c-mahogany), 
+         url(../img/painting.jpg);
+       }
+
+       &--4 {
+         background-image: linear-gradient(to right bottom, $c-brown-3, $c-mahogany), 
+         url(../img/traveling.jpg);
+       }
+   }
+
+   &__heading {
+       font-size: 2.8rem;
+       font-weight: 300;
+       text-transform: uppercase;
+       color: $c-mahogany;
+       position: absolute;
+       top: 80%;
+       width: 100%;
+   
+   }
+
+   &__details {
+       padding: 3rem;
+
+       ul {
+           list-style: none;
+           width: 80%;
+           margin: 0 auto;
+
+            @include respond(tab-land){
+               width: 100%;
+            }
+         li {
+               text-align: center;
+               font-size: 1.5rem;
+               padding: 1rem;
+
+               &:not(:last-child) {
+                   border-bottom: 1px solid $c-black-2;
+               }
+         }
+       }
+   }
+
+   // FRONT SIDE STYLING
+   &__cta {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;      
+   }
+
 }

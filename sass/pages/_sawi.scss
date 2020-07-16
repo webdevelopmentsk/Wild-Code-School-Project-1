@@ -1,27 +1,53 @@
 .header-sawi{
-
-    background-image: linear-gradient(to right bottom, rgba($c-black-1,0.4),rgba($c-black-2,0.3)),
-    url(../img/sawi-header.jpg);
+    padding: 5rem 0;
+    //background-image: linear-gradient(to right bottom, rgba($c-black-1,0.4),rgba($c-black-2,0.3)),
+    //url(../img/sawi-header.jpeg);
+    background-color: $c-brown-2;
+    //background-image: linear-gradient(to right bottom, $c-brown-1,$c-brown-2);
+    //background-image: url(../img/sawi-header2.jpg);
     background-size: cover;
     &__box{
         text-align: center; 
-        margin-top: 3rem;
+        padding: 2rem;
+        background-color: $c-brown-1;
+        &--1{
+            @include respond(tab-port){
+                display: none;
+            }
+            @include respond(phone){
+            display: none;
+            }
+        }
+        &--2{
+            
+        }
+        &--3{
+            @include respond(tab-port){
+                display: none;
+            }
+            @include respond(phone){
+                display: none;
+            }
+        }
     }
     &__text{
-        font-size: 6rem;
-        font-weight: 100;
+        font-size: 4rem;
+        font-weight: 400;
         line-height: 2;
-        letter-spacing: 2px;
-        text-shadow: 1px 1px rgba($c-black-1,.4);
-        color: $c-white;
-        font-family: 'Playfair Display', serif;
+        letter-spacing: 1px;
+        //text-shadow: 1px 1px rgba($c-black-1,.4);
+        color: $c-mahogany;
+        font-family: 'Old Standard TT', 'Playfair Display', serif;
+        text-transform: uppercase;
+        font-stretch: expanded;
+        margin-top: 2rem;
         animation: moveInLeft 1s ease-in;
     }
     &__photo-box{
         width: 20rem;
         height: 20rem;
         border-radius: 50%;
-        border: solid 3px rgba($c-white,0.8);
+        border: solid 2px $c-mahogany;
         overflow: hidden;
         background-image: url(../img/sawi-3.jpg);
         background-size: cover;
@@ -31,74 +57,81 @@
         }
     }
     &__h1{
-        font-family: 'Playfair Display', serif;
+        font-family: 'Old Standard TT','Playfair Display', serif;
         font-size: 2rem;
         line-height: 3;
         font-weight: 100;
         letter-spacing: 1px;
-        color: $c-white;
-        text-shadow: 1px 1px rgba($c-black-1,.4);
+        color: $c-black-1;
+        margin-bottom: 2rem;
+        //text-shadow: 1px 1px rgba($c-black-1,.4);
         animation: moveInLeft 1s ease-in;
+    }
+    &__photo--nature{
+        width: 50%;
+        height: 60%;
+        margin: 3rem 0;
     }
 }
 
 .sect__about-sawi{
-    background-color: $c-pink-1;
+    background-image: url(../img/sawi-about-2.jpg);
+    padding: 5rem 0;
     &__box{
-        height: 30rem;
-        width: 20rem;
+        height: 35rem;
         font-size: 3rem;
         color: $c-black-2;
-        border: solid 2px $c-white;
-        margin: 2rem;
-        padding: 4rem;
+        border-radius: 3px;
+        margin: 4rem 2rem;
+        padding: 0 2rem;
         text-align: center;
-
-        &--1{background-color: $c-pink-1;}
-        &--2{background-image: url(../img/coding.jpg);background-size: cover;}
-        &--3{background-image: url(../img/painting.jpg);background-size: cover;}
-        &--4{background-image: url(../img/teaching.jpg);background-size: cover;}
+        &--1{background-color: $c-brown-3;}
     }
 
 }
 
 
 .sect__havedone{
-    width: 1 1 100%;
+    flex: 1 1 100%;
+    padding: 5rem 0;
     height: auto;
-    //background-image: linear-gradient(to right bottom, rgba($c-white,0.1),rgba($c-black-2,0.1)),
-    //url(../img/sawi-section-things.jpg);
+    background-image: linear-gradient(to right bottom, rgba($c-white,0.1),rgba($c-black-2,0.1)),
+    url(../img/sawi-things.jpg);
     background-size:cover;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
-.sect__head{
-    width: 100vw;
+.sect__havedone__head{
+    flex: 0 1 25%;
+    background-color: $c-brown-2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 7rem 0;
+    outline: 1.5rem solid $c-brown-3;
+    outline-offset: 15px;
+    padding: 3rem;
 }
-
 .project{
 
     &__card{
-        margin-bottom: 2rem;
-        width: 45%;
+        flex: 0 0 27%;
+        background-image: linear-gradient(to right bottom, $c-brown-3, $c-brown-2);
+        margin: 3rem 2rem;
         height: auto;
-        border: 4px solid $c-black-1;
+        border-radius: 3px;
         box-shadow: 0 3rem 6rem rgba($c-black-1,.2);
         padding: 1.5rem;
-    }
-    &__img{
-        flex: 0 0 100%;
-        margin: 1rem 3rem;
-        &--content{
-         width: 100%;
-        }
+        display: flex;
     }
     &__detail{
+        color: $c-brown-1;
         flex: 0 0 100%;
-        margin: 1rem 3rem;
+        padding: 2rem 2rem;
+        display: flex;
+        flex-direction: column;
     }
-
     &__name{
         font-size: 2rem;
         font-weight: 600;
@@ -109,20 +142,42 @@
     }
     &__period{
         font-size: 1.5rem;
+        margin-bottom: 2rem;
     }
     &__company{
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
         color: $c-blue-1;
-        margin-bottom: 2rem;
         &--link,&--link:link, &--link:visited{
-            color: $c-blue-1;
+            color: $c-brown-1;
             margin: 0.5rem 0;
+        }
+        &--link:hover{
+            background-color: $c-brown-2;
+            padding: 0.5rem 0.1rem;
+            color: $c-mahogany;
+        }
+        &--link:active, &--link:focus{
+            background-color: $c-black-1;
+            color: $c-white;
         }
     }
     &__task{
+        color: $c-mahogany;
         font-size: 1.5rem;
-        text-align: justify;
+        text-align: normal;
+        margin-bottom: 2rem;
+        background-color: $c-brown-1;
+        padding: 2rem;
+        border-radius: 4px;
         
+    }
+    &__img{
+        flex: 0 0 100%;
+        margin: 1rem 3rem;
+        &--content{
+         width: 100%;
+        }
     }
 }
 
