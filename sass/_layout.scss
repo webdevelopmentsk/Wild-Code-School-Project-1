@@ -48,19 +48,21 @@
 .sect__about{
     flex: 0 1 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
     &-sawi{
         flex: 1 1 100%;
         display: flex;
         flex-wrap: wrap;
-
         &__box{
             flex: 1 1 10%;
         }
     
     }
 }
-.about__box1{
-    flex: 0 1 100%;
+.about__box{
+    flex: 0 0 30%;
     height: auto;
     display: flex;
     flex-direction: column;

@@ -6,7 +6,7 @@
     <title>Front-end Developer at Wild Code School</title>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Galada&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -22,9 +22,9 @@
                 <ul class="navigation__list">
                     <li class="navigation__item"><a class="navigation__link" href="index.html"><span>01</span>Home&nbsp;&nbsp;&nbsp;</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="https://www.wildcodeschool.com/en-GB/trainings/front-end-developer-part-time" target="_blank" ><span>02</span>About The Course</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="feedback.html"><span>03</span>Student's Feedbacks</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="contact.html"><span>04</span>Contact Us</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="project.html"><span>05</span>Project and Activities</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="pages/feedback.html"><span>03</span>Student's Feedbacks</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="pages/contact.html"><span>04</span>Contact Us</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="pages/project.html"><span>05</span>Project and Activities</a></li>
                 </ul>
             </nav>
 
@@ -45,7 +45,10 @@
                 </div>
     
                 <div class="header__text">
-                    Here we give you information about the course and we share our experience and feedbacks from other students with you.
+                    Let's us inspire you and give you a taste of the joy 
+                </div>
+                <div class="header__text">
+                    of becoming a front-end developer.
                 </div>
     
                 <button onclick="window.location.href='#sect__about'" class="btn btn--black">Learn More</button>
@@ -53,28 +56,64 @@
         </header>
         <main class="main">
             <section class="sect__about" id="sect__about">
-                <div class="about__box1">
+
+                <div class="about__box">
+                    <div class="u-center-text u-margin-bottom-medium u-margin-top-medium">
+                        <h2 class="heading heading--h2">What is the Front-End?</h2>
+                    </div>
+                    <div class="front-end__photo">
+                        <img class="front-end__photo--content" src="img/front-end.jpg" alt="Front-end">
+                    </div>
+                    <p class="paragraph paragraph--dark">
+                        A front-end developer links together the world of design and technology, packaging up the utility of the back end in an 
+                        inviting way for users to interact with. They take website design files and convert them into HTML, JavaScript (JS) 
+                        and/or CSS code - the core elements of front-end development. This includes design/layout, content, buttons, images, 
+                        navigation, and internal links.
+                    </p>
+
+                    <a href="https://usersnap.com/blog/how-to-become-a-front-end-developer/" target="_blank" class="btn btn--black">Read MOre</a>
+                </div>
+
+                <div class="about__box">
+                    <div class="u-center-text u-margin-bottom-medium u-margin-top-medium">
+                        <h2 class="heading heading--h2">About this site</h2>
+                    </div>
+                    <p class="paragraph paragraph--dark">
+                        A website is the most powrful tool for communication. It has it unique way to connect with the world. We create this website to promote the front-end developer course at Wild Code School.
+                        We would like to share our experience and other students's experience. Here, you will find:
+                        <ul class="paragraph">
+                            <li class="li__about">1/ Information about the course</li>
+                            <li class="li__about">2/ Feedbacks and experience from previous students </li>
+                            <li class="li__about">3/ Our personal sites where you can connect and get to know us more</li>
+                            <li class="li__about">4/ Projects that we have archived during this course</li>
+                            <li class="li__about">5/ Inspirations to become a front-end developer </li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="about__box">
                     <div class="u-center-text u-margin-bottom-medium u-margin-top-medium">
                         <h2 class="heading heading--h2">About the course</h2>
                     </div>
                     <p class="paragraph paragraph--dark">
                         Wild Code School is a network of schools that train professionals for the
-                        most in-demand tech jobs. Their 5-month front-end developer course trains professionals to become web developers. During your training, you will learn multiple skills from 5 main areas (4 technicals and
-                        1 focused on soft-skills)
+                        most in-demand tech jobs. Their 5-month front-end developer course trains professionals to 
+                        become web developers. During your training, you will learn multiple skills from 5 main areas 
+                        (4 technicals and1 focused on soft-skills)
                     </p>
                     <p class="paragraph paragraph--dark">
                         <ul class="paragraph">
-                            <li>1/Design a web application</li>
-                            <li>2/ Integrate a user interface</li>
-                            <li>3/ Develop a front-end web application</li>
-                            <li>4/ Perfect yourself as a developer</li>
-                            <li>5/ Become a tech professional</li>
+                            <li class="li__about">1/Design a web application</li>
+                            <li class="li__about">2/ Integrate a user interface</li>
+                            <li class="li__about">3/ Develop a front-end web application</li>
+                            <li class="li__about">4/ Perfect yourself as a developer</li>
+                            <li class="li__about">5/ Become a tech professional</li>
                         </ul>
                     </p>
     
                     <a href="https://www.wildcodeschool.com/en-GB/trainings/front-end-developer-part-time" target="_blank" class="btn btn--black">Read More</a>
-    
                 </div>
+
             </section>
             <section class="sect__feedback" id ="sect__feedback">
                 <div class="u-margin-left-big u-margin-bottom-medium u-margin-top-medium">
@@ -160,7 +199,7 @@
                         <div class="contact--card__text">
                             carlos_teixeira66@hotmail.com
                         </div>
-                        <a href="carlos.html" class="btn btn--black">More About Carlos</a>
+                        <a href="pages/carlos.html" class="btn btn--black">More About Carlos</a>
                     </div>
                     <div class="contact--card">
                         <div class="contact--card__photo-box">
@@ -183,7 +222,7 @@
                         <div class="contact--card__text">
                             Tel: +31 0612840850
                         </div>
-                        <a href="sawi.html" class="btn btn--black">More About Sawi</a>
+                        <a href="pages/sawi.html" class="btn btn--black">More About Sawi</a>
                     </div>
                 </div>
                 <div class="u-margin-left-big u-margin-bottom-small u-margin-top-medium">

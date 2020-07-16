@@ -14,15 +14,29 @@
     }
 }
 
-.about__box1{
+.sect__about{
+    background-image: linear-gradient(to right bottom, rgba(#23120B,.4),rgba(#5A3825,.4)),
+    url(../img/about.jpg);background-size: cover;
+}
+.about__box{
     background-image: url(../img/about.jpg);
     background-size:cover;
+    padding: 2rem;
+}
+.li__about{
+    margin-top:1rem;
+}
+.front-end__photo{
+    width: 90%;
+    margin-bottom: 3rem;
+    &--content{
+        width: 100%;
+    }
 }
 
 .sect__feedback{
     background-image:url(../img/feedback.jpg);
     background-size:cover;
-
 }
 .feedback--box{
 margin-bottom: 3rem;
