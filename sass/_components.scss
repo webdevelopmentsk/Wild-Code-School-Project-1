@@ -25,10 +25,22 @@
     box-shadow: 0 0.5rem 1rem rgba($c-black-1,.2);
  }
  &--transparent{
-    font-size: 1.5rem;
-    color:$c-white;
-    border: 2px solid $c-white;
-    background-color:transparent;
+    &,&:link, &:visited{
+    margin-top: 1.5rem;
+    display:inline-block;
+    font-size: 1.6rem;
+    color: $c-black-1;
+    padding: 3px;
+    border-bottom: solid 2px $c-black-1;
+    transition: all .2s;
+  
+      }
+      &:hover{
+        transform: translateY(-3px);
+      }
+      &:active, &:focus{
+        transform: translateY(3px);
+      }
  }
 
 }

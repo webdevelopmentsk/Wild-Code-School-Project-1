@@ -327,11 +327,20 @@ a {
   color: #FFFFFF;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.btn--transparent {
-  font-size: 1.5rem;
-  color: #FFFFFF;
-  border: 2px solid #FFFFFF;
-  background-color: transparent; }
+.btn--transparent, .btn--transparent:link, .btn--transparent:visited {
+  margin-top: 1.5rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #000000;
+  padding: 3px;
+  border-bottom: solid 2px #000000;
+  transition: all .2s; }
+
+.btn--transparent:hover {
+  transform: translateY(-3px); }
+
+.btn--transparent:active, .btn--transparent:focus {
+  transform: translateY(3px); }
 
 .btn-seemore-sawi, .btn-seemore-sawi:link, .btn-seemore-sawi:visited {
   margin-top: 1.5rem;
