@@ -32,8 +32,28 @@
  }
 
 }
+//sawi btn
+.btn-seemore-sawi{
+  &,&:link, &:visited{
+  margin-top: 1.5rem;
+  display:inline-block;
+  font-size: 1.6rem;
+  color: $c-mahogany;
+  padding: 3px;
+  border-bottom: solid 2px $c-mahogany;
+  transition: all .2s;
 
-
+    }
+    &:hover{
+      color:$c-white;
+      border-bottom: solid 2px $c-white;
+      background-color:transparent;
+      transform: translateY(-3px);
+    }
+    &:active, &:focus{
+      transform: translateY(3px);
+    }
+}
 //sawi's cards
 .card-sawi {
 
@@ -155,4 +175,27 @@
       justify-content: center;      
    }
 
+}
+
+//project
+.btn-seemore-project{
+  &,&:link, &:visited{
+  margin-top: 1.5rem;
+  display:inline-block;
+  font-size: 1.6rem;
+  color: $c-mahogany;
+  padding: 3px;
+  border-bottom: solid 2px $c-mahogany;
+  transition: all .2s;
+
+    }
+    &:hover{
+      color:$c-mahogany;
+      border-bottom: solid 2px $c-mahogany;
+      background-color:transparent;
+      transform: translateY(-3px);
+    }
+    &:active, &:focus{
+      transform: translateY(3px);
+    }
 }

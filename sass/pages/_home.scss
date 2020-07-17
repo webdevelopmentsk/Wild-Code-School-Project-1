@@ -35,8 +35,9 @@
 }
 
 .sect__feedback{
-    background-image:url(../img/feedback.jpg);
-    background-size:cover;
+    //background-image:url(../img/feedback.jpg);
+    //background-size:cover;
+    background-image: linear-gradient(to right bottom, $c-white, $c-brown-2);
 }
 .feedback--box{
 margin-bottom: 3rem;

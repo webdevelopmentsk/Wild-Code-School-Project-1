@@ -1,0 +1,36 @@
+.composition{
+    position: relative;
+
+    &__circle{
+
+        width: 35rem;
+        height: 35rem;
+        position: relative;
+        border: 5px solid $c-white-1;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: all .3s ease-out;
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        border-radius: none;
+        }
+
+            &--1{position: absolute;left:2rem;top:2rem;
+            }
+            &--2{position: absolute;left:20rem;top:25rem;
+            }
+            &--3{position: absolute; left:2rem;top:35rem; border-radius: 50%; object-fit: cover; filter: sepia(65%) contrast(150%);}//this is the video}
+
+            &:hover{transform:scale(1.2) translateY(-.5rem); z-index: 100;}
+
+    }
+
+    &__photo{
+        height: 100%;
+        filter: sepia(65%) contrast(150%);
+    }
+}

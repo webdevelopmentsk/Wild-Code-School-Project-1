@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.cdnfonts.com/css/levenim-mt" rel="stylesheet">
+        <style>@import url('https://fonts.cdnfonts.com/css/levenim-mt');</style>
+
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <style>
+
+            @font-face {
+               font-family: Oswald;
+               src: url(css/Oswald-VariableFont_wght.ttf);
+            }
+        </style>
+        <script src = "js/js.js"></script>
+
+        <title> het Dodewaards Mannenkoor </title>
+    </head>
+    <body>
+    
+    <div class="navigation">
+            <div class = "navigation__logo-box">
+                    <img src="img/logo.png" alt="Logo" class="navigation__logo">
+                    <div class = "navigation__logo-text-box">
+                        <p class ="navigation__logo-paragraph">Dodewaards</p>
+                        <p class ="navigation__logo-paragraph">Mannenkoor</p>
+                    </div>
+                </div>
+
+                <nav class="navbar">
+                    <a href="#sect__intro" class="nav__link" onclick="Home()">Home</a>
+                    <div class="dropdown">
+                        <a href="#" class="dropbtn">Wie we zijn <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                              <a href="#sect__intro"class="nav__link" onclick="EnvisibleSection('sect__intro')">Over ons</a>
+                              <a href="#sect__history" class="nav__link" onclick="EnvisibleSection('sect__history')">Geschiedenis</a>
+                              <a href="#sect__board" class="nav__link" onclick="EnvisibleSection('sect__board')">Bestuur</a>
+                        </div>
+                    </div>
+                    <a href="#sect__agenda" class="nav__link" onclick="EnvisibleSection('sect__agenda')">Agenda</a>
+                    <a href="#sect__album" class="nav__link" onclick="EnvisibleSection('sect__album')">Foto's</a>
+                    <a href="#sect__becomemember" class="nav__link" onclick="EnvisibleSection('sect__becomemember')">Lid worden</a>
+                    <a href="#sect__sponser" class="nav__link" onclick="EnvisibleSection('sect__sponser')">Sponseren</a>
+                    <a href="#sect__contact" class="nav__link" onclick="EnvisibleSection('sect__contact')">Contact</a>
+                </nav>
+    </div>
+
+    <header class="header">
+
+            <div class="heading-box u-margin-bottom-medium">
+                <h1 class="heading-h1 heading-h1-1">Dodewaards</h1>
+                <h1 class="heading-h1 heading-h1-2">Mannenkoor</h1>
+            </div>
+
+                <btn class="btn btn-transp">Activiteiten in juni <i class="icon icon-basic-calendar"></i></btn>
+        </header>
+
+    <main>
+        <section class="sect__intro" id="sect__intro">
+
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class ="u-margin-left-small u-margin-bottom-big">
+                    <h2 class = "heading-h2 heading-h2--light">WELKOM OP DE WEBSITE VAN HET DODEWAARDS MANNENKOOR</h2>
+                    </div>
+
+                    <p class ="paragraph paragraph--light u-margin-bottom-small u-margin-left-small">
+                        Het Dodewaards Mannenkoor is een algemeen koor met leden uit Dodewaard en omgeving.
+                        Ons koor bestaat sinds 1948 en is een graag geziene gast bij verschillende gelegenheden.
+                    </p>
+                    <p class ="paragraph paragraph--light u-margin-bottom-small u-margin-left-small">
+                        Bij het begin van de vakantie en begin januari worden ook de dames van de leden betrokken bij de activiteit die er dan wordt georganiseerd.De dames en enkele leden van ons koor maken in december ook kerstversieringen welke de leden dan op de markt verkopen.
+                    </p>
+                    <p class ="paragraph paragraph--light u-margin-bottom-small u-margin-left-small">
+                        Het koor treed meerdere keren per jaar op voor verschillende doelgroepen. Mocht u graag eens een avond in de week iets anders willen doen, kom eens vrijblijvend luisteren of meezingen op een oefenavond.
+                    </p>
+                    <p class ="paragraph paragraph--light u-margin-bottom-small u-margin-left-small">
+                        Zangervaring is echt niet nodig dit wordt vanzelf bijgebracht net zoals dit bij de meeste leden is gebeurd. 
+                    </p>
+                    
+                    <p class ="paragraph paragraph--light u-margin-left-small">
+                        Welkom en kijk gerust verder op onze website!
+                    </p>
+                </div>
+                
+                <div class="col-1-of-2"> 
+                    <div class="composition">
+                        <div class="composition__circle composition__circle--1"><img src="img/intro-1.jpg" alt="Photo 1" class="composition__photo"></div>
+                        <div class="composition__circle composition__circle--2"><img src="img/intro-2.jpg" alt="Photo 2" class="composition__photo"></div>
+                        <div class="sect__intro-video composition__circle composition__circle--3">
+                            <video id="sect__intro-video"class ="sect__intro-video-content" height="340" autoplay muted loop>
+                            <source src="img/sect__intro-video.mp4" type="video/mp4">
+                            <source src="img/sect__intro-video.webm" type="video/webm">
+                            </video>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sect__news">
+            <div class="row">
+                
+                <div class ="u-margin-left-small u-margin-bottom-big">
+                <h2 class = "heading-h2 heading-h2--light">NIEUWS EN UPDATES</h2>
+                </div>
+                <div class="col-1-of-2">
+                <img src="img/news-1.jpg" alt="news-1" class="news-1">
+                </div>
+                <div class="col-1-of-2">
+                <p class ="paragraph paragraph--light u-margin-bottom-small u-margin-left-small">OCHTEN - Op donderdagavond 20 juni geeft het Dodewaards Mannenkoor een concert in het Huis van Ochten, Dr. M. van Drielplein 2 (dorpshuis). 
+                Het koor bestaat uit ongeveer dertig leden uit Dodewaard en omgeving en staat onder leiding van Wim Veerman. Zij zingen geestelijke, klassieke en vlotte nummers. Het concert begint om 19.30 uur. De zaal is vanaf 19.00 uur open, de toegang is gratis. Er staat een bus bij de uitgang voor een vrijwillige bijdrage.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sect__agenda" id ="sect__agenda">
+            <div class="row">
+                <div class ="u-margin-left-small u-margin-bottom-big">
+                <h2 class = "heading-h2 heading-h2--dark">AGENDA</h2>
+                </div>
+
+                <p class ="paragraph paragraph--dark u-margin-left-small">
+                    Vakantie van 9 juli tot13 augustus 2020.
+                </p>
+                <p class ="paragraph paragraph--dark u-margin-left-small">
+                    Adventsconcert 11 december 2020.
+                </p>
+                <p class ="paragraph paragraph--dark u-margin-left-small">
+                    Kerstbakjes maken 16  december 2020.
+                </p>
+                <p class ="paragraph paragraph--dark u-margin-left-small">
+                    Kerstconcert 18 december 2020.
+                </p>
+                <p class ="paragraph paragraph--dark u-margin-left-small">
+                    Kerstbakjes verkoop 19 december 2020.
+                </p>
+                <p class ="paragraph paragraph--dark u-margin-left-small u-margin-bottom-medium">
+                    Hoge Hof Herveld 19 december 2020.
+                </p>
+
+                <p class ="paragraph paragraph--dark u-margin-left-small u-important-text">
+                    Uiteraard kan dit alleen doorgaan als de Coronacrisis dit toelaat.
+                </p>
+            
+        </section>
+
+        <section class="sect__history" id ="sect__history">
+            <div class="row">
+                <div class ="u-margin-left-small u-margin-bottom-big">
+                    <h2 class = "heading-h2 heading-h2--light">GESCHIEDENIS</h2>
+                </div>
+
+                <p class ="paragraph paragraph--light u-margin-bottom-small u-margin-left-small">Het koor is ontstaan na de Tweede Wereldoorlog, vanuit muziekvereniging Amicitia te Dodewaard.</p>
+                <p class ="paragraph paragraph--light u-margin-bottom-small u-margin-left-small">Omdat door de Duitse bezetter ook muziekinstrumenten waren ingevorderd en muzikanten daarnaast hun instrumenten hadden verborgen kon er geen muziek worden gemaakt.  Daarom kwamen enkele mannen op het idee om hun stem als instrument te gaan gebruiken.</p>
+                <p class ="paragraph paragraph--light u-margin-bottom-small u-margin-left-small">Opzet was, om dat mannengezang aan te houden tot het moment, dat men weer over muziekinstrumenten kon beschikken. Dan kon men weer op de “normale manier” muziek gaan maken. Nou dat is even iets anders gelopen, dan men zich had voorgesteld!</p>
+                <p class ="paragraph paragraph--light u-margin-bottom-small u-margin-left-small">Als mannen zingen is tot op de dag van vandaag nog een activiteit waar zo’n 30 mannen zinvol mee bezig zijn. Daarbij verzorgen de heren optredens binnen en buiten Dodewaard. Zijn een graag geziene gast in o.a bejaardenhuizen en kerken. Het typeert het koor dan ook, dat men van alle gezindten thuis is, naast religieuze liederen, zingt men ook Rijnliederen en liefdesliederen.</p>
+                <p class ="paragraph paragraph--light u-margin-bottom-small u-margin-left-small">Het Dodewaards Mannenkoor voldoet in al die jaren aan een duidelijke behoefte. Dat blijkt wel uit het feit, dat er mannen zijn die reeds 57 jaar lid zijn en nog steeds actief mee zingen.</p>
+                <p class ="paragraph paragraph--light u-margin-bottom-big u-margin-left-small">Het koor is in de loop van de jaren uitgegroeid van een mannenkoor tot een zingende herensociëteit, zoals onze oud voorzitter Henk Onderstal het vaak noemt. Dat is ook de kracht. Zingen blijft uiteraard super belangrijk, maar het samen als mannenkoor vertoeven en sociaal samen te zijn speelt een steeds grotere rol. Kende men vroeger het vereenzamen van ouderen minder, tegenwoordig is dat een vaststaand feit. Het Dodewaards Mannenkoor biedt middels haar activiteiten mannen een sociaal ontmoetingspunt aan, waar je ook kan zingen.</p>
+
+                <div class="history-box">
+                    <img src="img/history-1.jpg" alt="Dodewaards mannenkoor. foto genomen tussen 1945 en 1948" class="history-box__photo">
+                    <p class ="paragraph paragraph--light u-margin-bottom-big u-margin-left-small u-center-text">Dodewaards mannenkoor. foto genomen tussen 1945 en 1948</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="sect__board" id ="sect__board">
+            
+            <div class ="row">
+
+            <div class ="u-margin-left-small u-margin-bottom-big">
+                <h2 class = "heading-h2 heading-h2--dark">BESTUUR</h2>
+            </div>
+
+            <p class ="paragraph paragraph--dark u-margin-bottom-big u-margin-left-small u-center-text">Het bestuur bestaat uit 5 personen.</p>
+
+                <div class="col-1-of-5">
+                <div class="board-box">
+                    <p class ="paragraph paragraph--dark u-center-text">Voorzitter</p>
+                    <img src="img/KeesVanDijk.jpg" alt="Voorzitter" class="board-box__photo">
+                    <p class ="paragraph paragraph paragraph--dark u-center-text">Kees van Dijk</p>
+                </div>
+                </div>
+                <div class="col-1-of-5">
+                <div class="board-box">
+                    <p class ="paragraph paragraph--dark u-center-text">Secretaris</p>
+                    <img src="img/WimBloemendal.jpg" alt="Secretaris" class="board-box__photo">
+                    <p class ="paragraph paragraph--dark u-center-text">Wim Bloemendal</p>
+                </div>
+                </div>
+                <div class="col-1-of-5">
+                <div class="board-box">
+                    <p class ="paragraph paragraph--dark u-center-text">Penningmeester</p>
+                    <img src="img/JanHeikamp.jpg" alt="Penningmeester" class="board-box__photo">
+                    <p class ="paragraph paragraph--dark u-center-text">Jan Heikamp</p>
+                </div>
+                </div>
+                <div class="col-1-of-5">
+                <div class="board-box">
+                    <p class ="paragraph paragraph--dark u-center-text">Bestuurslid</p>
+                    <img src="img/KeesHoogakker.jpg" alt="Bestuurslid" class="board-box__photo">
+                    <p class ="paragraph paragraph--dark u-center-text">Kees Hoogakker</p>
+                </div>
+                </div>
+                <div class="col-1-of-5">
+                <div class="board-box">
+                    <p class ="paragraph paragraph--dark u-center-text">Bestuurslid</p>
+                    <img src="img/CasperVanDoorn.jpg" alt="Bestuurslid" class="board-box__photo">
+                    <p class ="paragraph paragraph--dark u-center-text">Casper van Doorn</p>
+                </div>
+                </div>
+            </div>
+            <div class="row sect__board__text">
+            <p class ="paragraph paragraph--dark u-margin-bottom-small u-margin-left-small">Email:<a href="mailto:secretarisdmk@outlook.com">  secretarisdmk@outlook.com</a></p>
+
+            <p class ="paragraph paragraph--dark u-margin-bottom-small u-margin-left-small">Wim Veerman uit Ochten is onze dirigent.</p>
+            <p class ="paragraph paragraph--dark u-margin-bottom-small u-margin-left-small">Tijdens het oefenen is hij heel erg gemotiveerd en bevlogen.</p>
+            </div>
+
+        </section>
+         <section class="sect__album" id ="sect__album">
+            <div class="row">
+                <div class ="u-margin-left-small u-margin-bottom-big">
+                <h2 class = "heading-h2 heading-h2--light">FOTO’S</h2>
+                </div>
+
+                <div class="col-1-of-2">
+                    <div class="album-box">
+                        <p class ="paragraph paragraph--dark u-margin-bottom-small u-center-text">Deelname aan winkel van sinkel</p>
+                        <img src="img/Deelname aan winkel van sinkel.jpg" alt="Deelname aan winkel van sinkel" class="album-box__photo">
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="album-box">
+                        <p class ="paragraph paragraph--dark u-margin-bottom-small u-center-text">Deelnemers oldtimerrit</p>
+                        <img src="img/Deelnemers oldtimerrit.jpg" alt="Deelnemers oldtimerrit" class="album-box__photo">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="album-box">
+                        <p class ="paragraph paragraph--dark u-margin-bottom-small u-center-text">Dodewaards Mannenkoor 4-6-2016</p>
+                        <img src="img/Dodewaards Mannenkoor 4-6-2016.jpg" alt="Dodewaards Mannenkoor 4-6-2016" class="album-box__photo">
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="album-box">
+                        <p class ="paragraph paragraph--dark u-margin-bottom-small u-center-text">Kerststukjes maken</p>
+                        <img src="img/Kerststukjes maken.jpg" alt="Kerststukjes maken" class="album-box__photo">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="album-box">
+                        <p class ="paragraph paragraph--dark u-margin-bottom-small u-center-text">Nieuwjaarsbijeenkomst</p>
+                        <img src="img/Nieuwjaarsbijeenkomst.jpg" alt="Nieuwjaarsbijeenkomst" class="album-box__photo">
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="album-box">
+                        <p class ="paragraph paragraph--dark u-margin-bottom-small u-center-text">Nieuwjaarsreceptie</p>
+                        <img src="img/Nieuwjaarsreceptie.jpg" alt="Nieuwjaarsreceptie" class="album-box__photo">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="album-box">
+                        <p class ="paragraph paragraph--dark u-margin-bottom-small u-center-text">Optocht bevrijdingsdag 5-05-2015</p>
+                        <img src="img/Optocht bevrijdingsdag 5-05-2015-1.jpg" alt="Optocht bevrijdingsdag 5-05-2015" class="album-box__photo">
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="album-box">
+                         <p class ="paragraph paragraph--dark u-margin-bottom-small u-center-text">Optocht bevrijdingsdag 5-05-2015</p>
+
+                        <video id="sect__intro-video"class ="sect__intro-video-content" height="250" controls>
+                        <source src="img/sect__intro-video.mp4" type="video/mp4">
+                        <source src="img/sect__intro-video.webm" type="video/webm">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="album-box">
+                        <p class ="paragraph paragraph--dark u-margin-bottom-small u-center-text">Verkoop kerstbakjes</p>
+                        <img src="img/verkoop kerstbakjes.jpg" alt="Verkoop kerstbakjes" class="album-box__photo">
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <div class="album-box">
+                        <p class ="paragraph paragraph--dark u-margin-bottom-small u-center-text">Visdag met barbecue</p>
+                        <img src="img/visdag met barbecue.jpg" alt="Visdag met barbecue" class="album-box__photo">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="album-box">
+                        <p class ="paragraph paragraph--dark u-margin-bottom-small u-center-text">Wat zou er aanzitten</p>
+                        <img src="img/Wat zou er aanzitten.jpg" alt="Wat zou er aanzitten" class="album-box__photo">
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <section class="sect__becomemember" id ="sect__becomemember">
+            <div class="row">
+                <div class ="u-margin-left-small u-margin-bottom-big">
+                    <h2 class = "heading-h2 heading-h2--dark">LID WORDEN</h2>
+                </div>
+                <p class ="paragraph paragraph--dark u-margin-bottom-small">Nieuwe leden,</p>
+                <p class ="paragraph paragraph--dark u-margin-bottom-small">Mannen uit Dodewaard en omstreken!</p>
+                <p class ="paragraph paragraph--dark u-margin-bottom-small">Kom een keer vrijblijvend kennismaken</p>
+                <p class ="paragraph paragraph--dark u-margin-bottom-small">Elke donderdag om 19:30 uur in de openbare basisschool de Bellefleur in Dodewaard Marijkelaan 1. Als je het niet kunt zeggen, zing het maar.</p>
+                <p class ="paragraph paragraph--dark u-margin-bottom-small u-center-text u-margin-top-small">Waarom zingen?</p>
+                <p class ="paragraph paragraph--dark u-margin-bottom-small">Zingen is een sport en zingen in een koor kun je zelfs teamsport noemen. Maar goede resultaten bereik je niet zomaar ...Presteren vraagt om een goede combinatie van houding, ademhaling en techniek. De conditie van de (zang)spieren, tactiek, strategie en spelinzicht. Laat dat allemaal over aan de coach van het koor, de dirigent, dan kunnen wij samen lekker zingen. De mooiste muziekinstrumenten zijn zingende mensen!</p>
+                <p class ="paragraph paragraph--dark u-margin-bottom-small">Als je gaat zingen heb je jouw instrument altijd bij je. Dat is makkelijk, jouw instrument doet het altijd en je kunt meteen beginnen.
+                Je kunt zonder les gehad te hebben meteen al een aardig nootje zingen.
+                Zingen neemt niet te duiden barrières weg, verzoent en geeft verbroedering. Al zingende vervalt de schroom, komen emoties los, ontstaat begrip en verheldering.
+                Vandaar de uitdrukking als iemand niet uit zijn woorden kan komen: ‘zing het maar’.</p>
+                <p class ="paragraph paragraph--dark u-margin-bottom-small u-center-text u-margin-top-small">Zingen bij het Dodewaards Mannenkoor
+                    <ul class="u-margin-left-medium u-margin-right-medium u-text-justify ">
+                    <li> Dat is 1 keer per week trainen en regelmatig een wedstrijd</li>
+                    <li>De repetities zijn iedere donderdagavond van 19:30 tot 21:30 uur met uitzondering van de schoolvakanties en er is pauze van 20:30 tot 20:45 uur.</li>
+                    <li>Regelmatig geven wij concerten en zijn er ook diverse optredens in de omgeving,  kerstconcerten e.d.</li>
+                    <li>U mag onze dirigent overtuigen dat u niet kunt zingen, wedden dat u het wel kunt. Noten kunnen lezen is niet noodzakelijk, maar is wel makkelijker.</li>
+                    <li>Elk jaar houden we een nieuwjaarsbijeenkomst en in de zomer een barbecue samen met onze partners, want het Dodewaards Mannenkoor is meer dan zingen alleen!</li>
+                    </ul>
+                </p>
+
+            </div>
+        </section>  
+
+        <section class="sect__sponser" id ="sect__sponser">
+            <div class="row">
+                <div class ="u-margin-left-small u-margin-bottom-big">
+                    <h2 class = "heading-h2 heading-h2--light">SPONSEREN</h2>
+                </div>  
+                
+                <p class ="u-margin-left-small paragraph paragraph--light u-margin-bottom-small">Sponsoren en donateurs,</p>
+                <p class ="u-margin-left-small paragraph paragraph--light u-margin-bottom-small">Het Dodewaards Mannenkoor kan bijna niet bestaan zonder sponsoring en donaties. Natuurlijk houden wij zelf ook steeds acties om onze verenigingskas aan te vullen, maar dat blijkt vaak niet genoeg om al onze onkosten te bestrijden. Als ons koor u aanspreekt en u wilt ons financieel steunen, dan zijn wij daar erg dankbaar voor.</p>
+                <p class ="u-margin-left-small paragraph paragraph--light u-margin-bottom-small">Als sponsor en donateur ondersteunt u het in stand houden van het koor.
+                Als sponsor krijgt u op onze site een vermelding van het logo van uw bedrijf. Indien gewenst maken wij een link naar uw eigen website.</p>
+                <p class ="u-margin-left-small paragraph paragraph--light u-margin-bottom-small">Heeft u belangstelling om ons op enige manier te ondersteunen, dan kunt u contact opnemen met de penningmeester.</p>
+
+            </div>
+        </section>
+
+        <section class="sect__contact" id ="sect__contact">
+            <div class="row">
+                <div class ="u-margin-left-small u-margin-bottom-big">
+                    <h2 class = "heading-h2 heading-h2--dark">CONTACT</h2>
+                </div>
+                    <p class ="paragraph paragraph--dark u-margin-bottom-small u-margin-left-small">Secretaris: Wim Bloemendal</p>
+                    <p class ="paragraph paragraph--dark u-margin-bottom-small u-margin-left-small">Email:<a href="mailto:secretarisdmk@outlook.com">  secretarisdmk@outlook.com</a></p>
+            </div>
+        </section>    
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div>
+                <div class = "footer__logo-box">
+                    <img src="img/logo.png" alt="Logo" class="footer__logo">
+                    <div class = "footer__logo-text-box">
+                        <p class ="footer__logo-paragraph">Dodewaards</p>
+                        <p class ="footer__logo-paragraph">Mannekoor</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="footer__nav">
+                    <div class="navbar--footer">
+                        <a href="#" class="nav__link">Home</a>
+                        <div class="dropdown">
+                            <a href="#" class="dropbtn dropbtn--footer">Wie we zijn <i class="fa fa-caret-down"></i></a>
+                            <div class="dropdown-content">
+                                  <a href="#" class="nav__link">Over ons</a>
+                                  <a href="#" class="nav__link">Geschiedenis</a>
+                                  <a href="#" class="nav__link">Bestuur</a>
+                            </div>
+                        </div>
+                        <a href="#" class="nav__link">Agenda</a>
+                        <a href="#" class="nav__link">Foto's</a>
+                        <a href="#" class="nav__link">Lid worden</a>
+                        <a href="#" class="nav__link">Sponseren</a>
+                        <a href="#" class="nav__link">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__copyright">
+                <p class = "footer__copyright-text">@2020|Dodewaards Mannekoor</p>
+            </div>
+        </div>
+    </footer>
+        
+    </body>
+</html>

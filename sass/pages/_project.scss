@@ -1,11 +1,81 @@
-.project--list{
+.header-project{
+    background-image: linear-gradient(to right bottom, rgba($c-black-1,.2),rgba($c-black-2,.4)),
+    url(../img/project-header.jpg);
+    background-size: cover;
+}
+.pj-project--list{
     width: 1 1 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: $c-black-2;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to right bottom, $c-white, $c-brown-1);
+    background-size: cover;
     padding-top: 4rem;
 }
-.project__card-project{
-    background-color: $c-white;
+.pj-project{
+    &__card{
+        flex: 0 0 27%;
+        height: auto;
+        background-image: linear-gradient(to right bottom, $c-white, $c-brown-1);
+        margin: 3rem 2rem;
+        height: auto;
+        border-radius: 3px;
+        box-shadow: 0 3rem 6rem rgba($c-black-1,.2);
+        padding: 1.5rem;
+        display: flex;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    &__detail{
+        color: $c-mahogany;
+        flex: 0 0 100%;
+        padding: 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    &__name{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+    &__location{
+        font-size: 1.5rem;
+    }
+    &__period{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    &__company{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: $c-blue-1;
+        &--link,&--link:link, &--link:visited{
+            color: $c-mahogany;
+            margin: 0.5rem 0;
+        }
+        &--link:hover{
+            background-color: $c-white;
+            padding: 0.5rem 0.1rem;
+            color: $c-black-1;
+        }
+    }
+    &__task{
+        color: $c-mahogany;
+        font-size: 1.5rem;
+        text-align: normal;
+        margin-bottom: 2rem;
+        background-color: $c-brown-1;
+        padding: 2rem;
+        border-radius: 4px;
+        
+    }
+    &__img{
+        height: 35%;
+        border-radius: 3px;
+        overflow: hidden;
+        &--content{
+         width: 100%;
+        }
+    }
 }

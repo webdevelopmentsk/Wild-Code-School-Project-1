@@ -134,24 +134,15 @@ a {
     height: 85vh; }
   .header-feedback {
     height: 75vh; }
-  .header-sawi {
-    flex: 1 1 100%;
-    height: auto;
-    display: flex;
-    align-items: center; }
-    @media only screen and (max-width: 37.5em) {
-      .header-sawi {
-        height: 50vh; } }
-    .header-sawi__box {
-      flex: 1 0 20%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
   .header-project {
     flex: 1 1 100%;
-    height: 75vh;
-    display: flex; }
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center; }
 
 .sect__about {
   flex: 0 1 100%;
@@ -159,20 +150,6 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 5rem 2rem; }
-  .sect__about-sawi {
-    flex: 1 1 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly; }
-    .sect__about-sawi__box {
-      flex: 0 1 25%; }
-      .sect__about-sawi__box--1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; }
-      @media only screen and (max-width: 37.5em) {
-        .sect__about-sawi__box--1, .sect__about-sawi__box--2, .sect__about-sawi__box--3, .sect__about-sawi__box--4 {
-          flex: 0 1 100%; } }
 
 .about__box {
   flex: 0 0 30%;
@@ -356,6 +333,24 @@ a {
   border: 2px solid #FFFFFF;
   background-color: transparent; }
 
+.btn-seemore-sawi, .btn-seemore-sawi:link, .btn-seemore-sawi:visited {
+  margin-top: 1.5rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #420D09;
+  padding: 3px;
+  border-bottom: solid 2px #420D09;
+  transition: all .2s; }
+
+.btn-seemore-sawi:hover {
+  color: #FFFFFF;
+  border-bottom: solid 2px #FFFFFF;
+  background-color: transparent;
+  transform: translateY(-3px); }
+
+.btn-seemore-sawi:active, .btn-seemore-sawi:focus {
+  transform: translateY(3px); }
+
 .card-sawi {
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -426,6 +421,24 @@ a {
     flex-direction: column;
     justify-content: center; }
 
+.btn-seemore-project, .btn-seemore-project:link, .btn-seemore-project:visited {
+  margin-top: 1.5rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #420D09;
+  padding: 3px;
+  border-bottom: solid 2px #420D09;
+  transition: all .2s; }
+
+.btn-seemore-project:hover {
+  color: #420D09;
+  border-bottom: solid 2px #420D09;
+  background-color: transparent;
+  transform: translateY(-3px); }
+
+.btn-seemore-project:active, .btn-seemore-project:focus {
+  transform: translateY(3px); }
+
 .header {
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 10, 21, 0.4)), url(../img/header.jpg);
   background-size: cover; }
@@ -455,8 +468,7 @@ a {
     width: 100%; }
 
 .sect__feedback {
-  background-image: url(../img/feedback.jpg);
-  background-size: cover; }
+  background-image: linear-gradient(to right bottom, #FFFFFF, #B99976); }
 
 .feedback--box {
   margin-bottom: 3rem; }
@@ -534,10 +546,22 @@ a {
   color: #000a15; }
 
 .header-sawi {
+  flex: 1 1 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
   padding: 5rem 0;
   background-color: #B99976;
   background-size: cover; }
+  @media only screen and (max-width: 37.5em) {
+    .header-sawi {
+      height: 50vh; } }
   .header-sawi__box {
+    flex: 1 0 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 2rem;
     background-color: #ecdbc3; }
@@ -589,10 +613,39 @@ a {
     height: 60%;
     margin: 3rem 0; }
 
+.contact--card__icon-sawi--box {
+  font-size: 2rem;
+  color: #420D09;
+  margin: 1rem; }
+
+.contact--card__icon-sawi--link {
+  text-align: center;
+  text-decoration: none; }
+
+/* For the icon 
+.fa {
+
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 .5rem;
+  }
+  .fa:hover {
+    opacity: 0.7;
+}
+.fa-github, .fa-facebook,.fa-linkedin, .fa-skype, .fa-envelope{
+    color: $c-black-2;
+}
+*/
 .sect__about-sawi {
+  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   background-image: url(../img/sawi-about-2.jpg);
   padding: 5rem 0; }
   .sect__about-sawi__box {
+    flex: 0 1 25%;
     height: 35rem;
     font-size: 3rem;
     color: #000a15;
@@ -600,6 +653,13 @@ a {
     margin: 4rem 2rem;
     padding: 0 2rem;
     text-align: center; }
+    .sect__about-sawi__box--1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    @media only screen and (max-width: 37.5em) {
+      .sect__about-sawi__box--1, .sect__about-sawi__box--2, .sect__about-sawi__box--3, .sect__about-sawi__box--4 {
+        flex: 0 1 100%; } }
     .sect__about-sawi__box--1 {
       background-color: #987554; }
 
@@ -611,21 +671,24 @@ a {
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  align-items: flex-start; }
 
 .sect__havedone__head {
   flex: 0 1 25%;
   background-color: #B99976;
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   margin: 7rem 0;
   outline: 1.5rem solid #987554;
   outline-offset: 15px;
   padding: 3rem; }
+  .sect__havedone__head:hover {
+    transform: scale(1.05); }
 
 .project__card {
   flex: 0 0 27%;
+  height: auto;
   background-image: linear-gradient(to right bottom, #987554, #B99976);
   margin: 3rem 2rem;
   height: auto;
@@ -633,6 +696,8 @@ a {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
   padding: 1.5rem;
   display: flex; }
+  .project__card:hover {
+    transform: scale(1.05); }
 
 .project__detail {
   color: #ecdbc3;
@@ -678,8 +743,9 @@ a {
   border-radius: 4px; }
 
 .project__img {
-  flex: 0 0 100%;
-  margin: 1rem 3rem; }
+  height: 35%;
+  border-radius: 3px;
+  overflow: hidden; }
   .project__img--content {
     width: 100%; }
 
@@ -700,13 +766,75 @@ a {
     color: #FFFFFF;
     margin: 2rem 0; }
 
-.project--list {
+.header-project {
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 10, 21, 0.4)), url(../img/project-header.jpg);
+  background-size: cover; }
+
+.pj-project--list {
   width: 1 1 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: #000a15;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to right bottom, #FFFFFF, #ecdbc3);
+  background-size: cover;
   padding-top: 4rem; }
 
-.project__card-project {
-  background-color: #FFFFFF; }
+.pj-project__card {
+  flex: 0 0 27%;
+  height: auto;
+  background-image: linear-gradient(to right bottom, #FFFFFF, #ecdbc3);
+  margin: 3rem 2rem;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  display: flex; }
+  .pj-project__card:hover {
+    transform: scale(1.05); }
+
+.pj-project__detail {
+  color: #420D09;
+  flex: 0 0 100%;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column; }
+
+.pj-project__name {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem; }
+
+.pj-project__location {
+  font-size: 1.5rem; }
+
+.pj-project__period {
+  font-size: 1.5rem;
+  margin-bottom: 2rem; }
+
+.pj-project__company {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #005073; }
+  .pj-project__company--link, .pj-project__company--link:link, .pj-project__company--link:visited {
+    color: #420D09;
+    margin: 0.5rem 0; }
+  .pj-project__company--link:hover {
+    background-color: #FFFFFF;
+    padding: 0.5rem 0.1rem;
+    color: #000000; }
+
+.pj-project__task {
+  color: #420D09;
+  font-size: 1.5rem;
+  text-align: normal;
+  margin-bottom: 2rem;
+  background-color: #ecdbc3;
+  padding: 2rem;
+  border-radius: 4px; }
+
+.pj-project__img {
+  height: 35%;
+  border-radius: 3px;
+  overflow: hidden; }
+  .pj-project__img--content {
+    width: 100%; }

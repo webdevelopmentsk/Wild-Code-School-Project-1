@@ -33,7 +33,7 @@
         </div>
     <div class="container">
         <header class="header header-project">
-            <div class="header__box">
+            <div class="header--box">
                 <div class="header__text">
                     Here.. Let's us show what we have done so far in this course.
                 </div>
@@ -44,275 +44,26 @@
             </div>
         </header>
         <main class="main">
-            <section class="project--list">
-                <div class="project__card project__card-project">
-                    <div class="project__img">
-                        <img class="project__img--content" src="../img/myFavRescipe.jpg">
-                    </div>
-                    <div class="project__detail">
-                        <div class ="project__name">
+            <section class="pj-project--list">
+                <div class="pj-project__card">
+                    <div class="pj-project__detail">
+                        <div class ="pj-project__name">
                             My Favorite Rescipes
                         </div>
-                        <div class ="project__period">
+                        <div class ="pj-project__period">
                             July 2020
                         </div>  
-                        <div class="project__company">
-                            <a href="../projects/MyFavRescipe/index.html" target="_blank" class="job__company--link">A project for week 1</a>
+                        <div class="pj-project__task">
+                            We learned about HTML and CSS in the first week. Using a simple css styling code can create something nice. 
                         </div> 
-                        <div class="project__task">
-                         We learned about HTML and CSS in the first week. Using a simple css styling code can create something nice. 
-                        </div>  
+                        <div class="pj-project__img">
+                            <img class="pj-project__img--content" src="../img/myFavRescipe.jpg">
+                        </div> 
+                        <div><a href="../projects/MyFavRescipe/index.html" target="_blank" class="btn-seemore-project">See The Website &rarr;</a></div>
+        
                     </div>
-                     
                 </div>
 
-                <div class="project__card project__card-project">
-
-                    <div class="calculator">
-                            <div class="monitor" id="monitor">
-                                
-                            </div>
-                            <div class="btn-group">
-                                <div class="number btn--number-6">6</div>
-                                <div class="number btn--number-7">7</div>
-                                <div class="number btn--number-8">8</div>
-                                <div class="number btn--number-9">9</div>
-
-
-                                <div class="number btn--number-5">5</div>
-                                <div class="number btn--number-4">4</div>
-                                <div class="number btn--number-3">3</div>
-                                <div class="number btn--number-2">2</div>
-                                <div class="number btn--number-1">1</div>
-                                <div class="number btn--number-0">0</div>
-                                <div class="btn--decimal">.</div>
-                                <div class="btn--ac">AC</div>
-                            </div>
-                            <div class="operator-group">
-                                <div class="operator btn--operator-plus">+</div>
-                                <div class="operator btn--operator-minus">-</div>
-                                <div class="operator btn--operator-multiply">x</div>
-                                <div class="operator btn--operator-devision">%</div>
-                                <div class="btn--enter">=</div>
-                            </div>
-                    </div>
-                        <script>
-                            //Global Decaration
-//What we use in the caculation
-let numbers = [0,0];
-let operator = '';
-//What we use to check conditions
-let decimalCount,enterCount;
-//Dynamic variable 
-let currentNumber, currentIndex;
-
-let monitorShow = document.getElementById('monitor');
-
-init();
-
-function init(){
-    monitorShow.textContent = '0';
-    numbers = [0,0];
-    operator = '';
-    decimalCount = 0;
-    enterCount = 0;
-    currentNumber = '0';
-    currentIndex = 0;
-}
-
-function setNumbers(){
-    numbers[currentIndex] = monitorShow.textContent;
-}
-
-function storeDecimal(value){
-    if(decimalCount== 0 && enterCount == 0){
-        decimalCount = 1;
-        currentNumber += value.toString();
-    }
-    else if (enterCount != 0){
-        decimalCount = 1;
-        currentNumber = '0' + value.toString();
-    }
-    monitorShow.textContent= currentNumber;
-}
-
-function setCurrentNumber(value){
-
-    if(currentNumber != '0' && enterCount== 0){
-        currentNumber += value.toString();
-    }
-    else if(currentNumber != '0' && enterCount != 0){
-        currentNumber += value.toString();
-        enterCount= 0;
-    }
-    else{
-        currentNumber=value;
-    }
-    setNumbers();
-    monitorShow.textContent= currentNumber;
-}
-
-function setOperator(opt){
-    operator = opt;
-    setNumbers();
-    monitorShow.textContent= opt;
-    currentIndex = 1;
-    currentNumber='0';
-    decimalCount = 0;
-}
-
-function calculation(){
-
-    if(operator != ''){
-        setNumbers();
-        let total=0;
-        switch(operator){
-            case "+": total = parseFloat(numbers[0]) + parseFloat(numbers[1]);break;
-            case "-": total = numbers[0] - numbers[1];break;
-            case "*": total = numbers[0] * numbers[1];break;
-            case "%": if(numbers[1]!= 0){total = numbers[0] / numbers[1];}
-                      else{window.alert()("The number can not be devided by 0");} break;
-        }
-        monitorShow.textContent= total;
-        //Set values for the next caculation
-        currentIndex =0;
-        setNumbers();
-        operator = '';
-        decimalCount = 0;
-        enterCount = 1;
-
-    }
-}
-
-//When a user clicks on the button, store the value
-document.querySelector('.btn--ac').addEventListener('click',init);
-document.querySelector('.btn--enter').addEventListener('click',calculation);
-
-document.querySelector('.btn--number-1').addEventListener('click', function(){let value = 1; setCurrentNumber(value);});
-document.querySelector('.btn--number-2').addEventListener('click', function(){let value = 2; setCurrentNumber(value);});
-document.querySelector('.btn--number-3').addEventListener('click', function(){let value = 3; setCurrentNumber(value);});
-document.querySelector('.btn--number-4').addEventListener('click', function(){let value = 4; setCurrentNumber(value);});
-document.querySelector('.btn--number-5').addEventListener('click', function(){let value = 5; setCurrentNumber(value);});
-document.querySelector('.btn--number-6').addEventListener('click', function(){let value = 6; setCurrentNumber(value);});
-document.querySelector('.btn--number-7').addEventListener('click', function(){let value = 7; setCurrentNumber(value);});
-document.querySelector('.btn--number-8').addEventListener('click', function(){let value = 8; setCurrentNumber(value);});
-document.querySelector('.btn--number-9').addEventListener('click', function(){let value = 9; setCurrentNumber(value);});
-
-document.querySelector('.btn--number-0').addEventListener('click', function(){let value = 0; setCurrentNumber(value);});
-
-document.querySelector('.btn--decimal').addEventListener('click', function(){let value = '.'; storeDecimal(value);});
-
-document.querySelector('.btn--operator-plus').addEventListener('click', function(){let opt = '+';setOperator(opt);});
-document.querySelector('.btn--operator-minus').addEventListener('click', function(){let opt = '-';setOperator(opt);});
-document.querySelector('.btn--operator-multiply').addEventListener('click', function(){let opt = '*';setOperator(opt);});
-document.querySelector('.btn--operator-devision').addEventListener('click', function(){let opt = '%';setOperator(opt);});
-                        </script>
-                        <style>
-                                                    .calculator{
-                                                        width: 33rem;
-                                                        display: flex;
-                                                        margin: 3rem;
-                                                        display: flex;
-                                                        flex-wrap: wrap;
-                                                        border: solid 2px black;
-                                                        padding: 1rem;
-                                                        background-color: lightsteelblue;
-                                                                            }
-                                                    .monitor{
-                                                        flex: 0 0 95%;
-                                                        background-color: white;
-                                                        font-size: 2rem;
-                                                        border: solid 2px black;
-                                                        height: 5.2rem;
-                                                        padding-left: 1rem;
-                                                    }
-                                                    .btn-group{
-                                                        flex: 0 0 75%;
-                                                        display: flex;
-                                                        flex-wrap: wrap;
-                                                        justify-content: flex-start;
-                                                        margin-top: 1rem;
-                                                    }
-                                                    .number{
-                                                        padding-top: 1.2rem;
-                                                        text-align: center;
-                                                        height: 5.8rem;
-                                                        width: 4.7rem;
-                                                        font-size: 1.5rem;
-                                                        background-color: lightgray;
-                                                        margin: 0.5rem;
-                                                        border: solid 2px black;
-                                                    }
-                                                    .operator-group{
-                                                        margin-top: 1rem;
-                                                        flex: 0 0 19%;
-                                                        justify-content: flex-start;
-                                                        display: flex;
-                                                        flex-wrap: wrap;
-                                                    }
-                                                    .operator{
-                                                        text-align: center;
-                                                        padding-top: 0.2rem;
-                                                        background-color: grey;
-                                                        font-size: 2rem;
-                                                        margin: 0.3rem;
-                                                        height: 3.5rem;
-                                                        width: 6rem;
-                                                        border: solid 2px black;
-                                                    }
-                        
-                                                    .number:focus, .number:active,
-                                                    .operator:focus, .operator:active,
-                                                    .btn--enter:focus, .btn--enter:active,
-                                                    .btn--ac:focus, .btn--ac:active{
-                                                        transform: translateY(3px);
-                                                    }
-                                                    .btn--enter{
-                                                        background-color: lightblue;
-                                                        margin: 0.3rem;
-                                                        height: 3.6rem;
-                                                        width: 6rem;
-                                                        text-align: center;
-                                                        font-size: 2rem;
-                                                        border: solid 2px black;
-                                                    }
-                                                    .btn--ac{
-                                                        padding-top: 1.2rem;
-                                                        text-align: center;
-                                                        height: 5.8rem;
-                                                        width: 4.7rem;
-                                                        font-size: 1.5rem;
-                                                        background-color: pink;
-                                                        margin: 0.5rem;
-                                                        border: solid 2px black;
-
-                                                    }
-                                                    .btn--decimal{
-                                                        padding-top: 1.2rem;
-                                                        text-align: center;
-                                                        height: 5.8rem;
-                                                        width: 4.7rem;
-                                                        font-size: 1.5rem;
-                                                        background-color: lightgray;
-                                                        margin: 0.5rem;
-                                                        border: solid 2px black;
-                                                    }
-                        </style>
-                    <div class="project__detail">
-                        <div class ="project__name">
-                            My First Calculator
-                        </div>
-                        <div class ="project__period">
-                            July 2020
-                        </div>  
-                        <div class="project__company">
-                            <a href="#" target="_blank" class="job__company--link">A project for week 4</a>
-                        </div> 
-                        <div class="project__task">
-                          Here, we have been practicing JavaScript and DOM Manipulation.
-                        </div>  
-                    </div>
-                </div>
             </section>
         </main>
 

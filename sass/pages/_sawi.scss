@@ -1,4 +1,13 @@
+
 .header-sawi{
+    flex: 1 1 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    @include respond(phone){
+        height: 50vh;
+    }
+
     padding: 5rem 0;
     //background-image: linear-gradient(to right bottom, rgba($c-black-1,0.4),rgba($c-black-2,0.3)),
     //url(../img/sawi-header.jpeg);
@@ -7,6 +16,12 @@
     //background-image: url(../img/sawi-header2.jpg);
     background-size: cover;
     &__box{
+        flex: 1 0 20%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         text-align: center; 
         padding: 2rem;
         background-color: $c-brown-1;
@@ -74,10 +89,55 @@
     }
 }
 
+.contact--card__icon-sawi{
+    &--box{
+        font-size: 2rem;
+        color: $c-mahogany;
+        margin: 1rem;
+    }
+    &--link{
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+/* For the icon 
+.fa {
+
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 .5rem;
+  }
+  .fa:hover {
+    opacity: 0.7;
+}
+.fa-github, .fa-facebook,.fa-linkedin, .fa-skype, .fa-envelope{
+    color: $c-black-2;
+}
+*/
+
 .sect__about-sawi{
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
     background-image: url(../img/sawi-about-2.jpg);
     padding: 5rem 0;
+    
     &__box{
+        flex: 0 1 25%;
+        &--1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        @include respond(phone){
+         &--1, &--2, &--3,&--4{
+            flex: 0 1 100%;
+         }           
+        }
         height: 35rem;
         font-size: 3rem;
         color: $c-black-2;
@@ -87,7 +147,6 @@
         text-align: center;
         &--1{background-color: $c-brown-3;}
     }
-
 }
 
 
@@ -101,22 +160,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: flex-start;
 }
 .sect__havedone__head{
     flex: 0 1 25%;
     background-color: $c-brown-2;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     margin: 7rem 0;
     outline: 1.5rem solid $c-brown-3;
     outline-offset: 15px;
     padding: 3rem;
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 .project{
 
     &__card{
         flex: 0 0 27%;
+        height: auto;
         background-image: linear-gradient(to right bottom, $c-brown-3, $c-brown-2);
         margin: 3rem 2rem;
         height: auto;
@@ -124,6 +187,9 @@
         box-shadow: 0 3rem 6rem rgba($c-black-1,.2);
         padding: 1.5rem;
         display: flex;
+        &:hover{
+            transform: scale(1.05);
+        }
     }
     &__detail{
         color: $c-brown-1;
@@ -173,11 +239,13 @@
         
     }
     &__img{
-        flex: 0 0 100%;
-        margin: 1rem 3rem;
+        height: 35%;
+        border-radius: 3px;
+        overflow: hidden;
         &--content{
          width: 100%;
         }
     }
 }
+
 
