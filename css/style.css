@@ -198,7 +198,7 @@ a {
   display: none; }
 
 .navigation__button {
-  background-color: #FFFFFF;
+  background-color: #bd6a33;
   height: 4rem;
   width: 4rem;
   position: fixed;
@@ -209,18 +209,22 @@ a {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; }
-
+/* i was trying to fix the width of the image when the nav bar open, but didin t succed so far*/
 .navigation__background {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
-  position: fixed;
+  position:fixed;
   top: 3.5rem;
   right: 3.5rem;
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-  background-image: url(../img/navigation.jpg);
+  background-image: url(../img/ben-kolde-bs2Ba7t69mM-unsplash.jpg);/*url(../img/navigation.jpg);*/
   background-size: cover; }
+
+
+  
+ 
 
 .navigation__nav {
   height: 100vh;
@@ -252,7 +256,7 @@ a {
   color: #313335;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #FFFFFF 50%);
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%,#bd6a33 50%);
   background-size: 220%;
   transition: all .4s; }
   .navigation__link:link span, .navigation__link:visited span {
@@ -310,7 +314,9 @@ a {
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 1rem 2rem;
-  border: none;
+  border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -webkit-border-radius: 3rem;
   cursor: pointer;
   transition: all .3s; }
 
@@ -459,13 +465,16 @@ a {
     margin: 2rem 0; }
 
 .sect__about {
-  background-image: linear-gradient(to right bottom, rgba(35, 18, 11, 0.4), rgba(90, 56, 37, 0.4)), url(../img/about.jpg);
-  background-size: cover; }
+  background-image: linear-gradient(to right bottom, rgba(35, 18, 11, 0.4), rgba(90, 56, 37, 0.4)),} /*url(../img/about.jpg); Carlos Temporary changes
+  background-size: cover; */
 
+  /*small changes Carlos*/
 .about__box {
-  background-image: url(../img/about.jpg);
-  background-size: cover;
-  padding: 2rem; }
+  border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  border: 10px solid #bd6a33;}
+  
 
 .li__about {
   margin-top: 1rem; }
@@ -477,15 +486,17 @@ a {
     width: 100%; }
 
 .sect__feedback {
-  background-image: linear-gradient(to right bottom, #FFFFFF, #B99976); }
+  background-color: #FFFFFF;}
+  /*background-image: linear-gradient(to right bottom, #FFFFFF, #bd6a33); }*/
 
 .feedback--box {
   margin-bottom: 3rem; }
 
 .feedback--card {
-  padding: 0 2rem;
-  margin: 3rem 3rem;
-  border: 8px solid #000a15;
+  border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  border: 10px solid #bd6a33;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2); }
   .feedback--card__photo-box {
     width: 15rem;
@@ -506,15 +517,17 @@ a {
   height: 100%; }
 
 .footer {
-  background-image: url(../img/contact.jpg); }
+  background-color: #FFFFFF;}
+  /*background-image: url(../img/contact.jpg); }*/
 
 .contact__img {
   width: 100%; }
 
 .contact--card {
-  padding: 2rem 2rem;
-  margin: 3rem 3rem;
-  border: 2px solid #000000;
+  border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  border: 10px solid #bd6a33;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2); }
   .contact--card__photo-box {
     width: 15rem;
