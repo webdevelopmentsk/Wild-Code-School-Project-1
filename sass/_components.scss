@@ -23,6 +23,7 @@
     background-color:$c-black-1;
     color:$c-white;
     box-shadow: 0 0.5rem 1rem rgba($c-black-1,.2);
+    border-radius: 20px;
  }
  &--transparent{
     &,&:link, &:visited{

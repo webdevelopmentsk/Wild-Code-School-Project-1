@@ -198,7 +198,7 @@ a {
   display: none; }
 
 .navigation__button {
-  background-color: #bd6a33;
+  background-color: #FFFFFF;
   height: 4rem;
   width: 4rem;
   position: fixed;
@@ -206,25 +206,21 @@ a {
   right: 3rem;
   border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
-  cursor: pointer; }
-/* i was trying to fix the width of the image when the nav bar open, but didin t succed so far*/
+  cursor: pointer;
+  box-shadow: 10px 10px 29px -4px rgba(0, 0, 0, 0.75); }
+
 .navigation__background {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
-  position:fixed;
+  position: fixed;
   top: 3.5rem;
   right: 3.5rem;
+  background-image: radial-gradient(#d0efff, #2a9df4);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-  background-image: url(../img/ben-kolde-bs2Ba7t69mM-unsplash.jpg);/*url(../img/navigation.jpg);*/
   background-size: cover; }
-
-
-  
- 
 
 .navigation__nav {
   height: 100vh;
@@ -256,7 +252,7 @@ a {
   color: #313335;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%,#bd6a33 50%);
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #FFFFFF 50%);
   background-size: 220%;
   transition: all .4s; }
   .navigation__link:link span, .navigation__link:visited span {
@@ -314,9 +310,7 @@ a {
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 1rem 2rem;
-  border-radius: 3rem;
-  -moz-border-radius: 3rem;
-  -webkit-border-radius: 3rem;
+  border: none;
   cursor: pointer;
   transition: all .3s; }
 
@@ -331,7 +325,8 @@ a {
   font-size: 2rem;
   background-color: #000000;
   color: #FFFFFF;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 20px; }
 
 .btn--transparent, .btn--transparent:link, .btn--transparent:visited {
   margin-top: 1.5rem;
@@ -465,16 +460,13 @@ a {
     margin: 2rem 0; }
 
 .sect__about {
-  background-image: linear-gradient(to right bottom, rgba(35, 18, 11, 0.4), rgba(90, 56, 37, 0.4)),} /*url(../img/about.jpg); Carlos Temporary changes
-  background-size: cover; */
+  background-color: #B99976; }
 
-  /*small changes Carlos*/
 .about__box {
-  border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  border: 10px solid #bd6a33;}
-  
+  background-color: #ecdbc3;
+  background-size: cover;
+  padding: 2rem;
+  border-radius: 4px; }
 
 .li__about {
   margin-top: 1rem; }
@@ -486,17 +478,15 @@ a {
     width: 100%; }
 
 .sect__feedback {
-  background-color: #FFFFFF;}
-  /*background-image: linear-gradient(to right bottom, #FFFFFF, #bd6a33); }*/
+  background-image: linear-gradient(to right bottom, rgba(236, 219, 195, 0.4), rgba(185, 153, 118, 0.4)); }
 
 .feedback--box {
   margin-bottom: 3rem; }
 
 .feedback--card {
-  border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  border: 10px solid #bd6a33;
+  padding: 0 2rem;
+  margin: 3rem 3rem;
+  border: 8px solid #000a15;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2); }
   .feedback--card__photo-box {
     width: 15rem;
@@ -517,17 +507,15 @@ a {
   height: 100%; }
 
 .footer {
-  background-color: #FFFFFF;}
-  /*background-image: url(../img/contact.jpg); }*/
+  background-image: linear-gradient(to right bottom, rgba(255, 182, 193, 0.2), rgba(252, 106, 3, 0.3)); }
 
 .contact__img {
   width: 100%; }
 
 .contact--card {
-  border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  border: 10px solid #bd6a33;
+  padding: 2rem 2rem;
+  margin: 3rem 3rem;
+  border: 2px solid #000000;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2); }
   .contact--card__photo-box {
     width: 15rem;
@@ -743,7 +731,7 @@ a {
 .project__company {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #005073; }
+  color: #d0efff; }
   .project__company--link, .project__company--link:link, .project__company--link:visited {
     color: #ecdbc3;
     margin: 0.5rem 0; }
@@ -836,7 +824,7 @@ a {
 .pj-project__company {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #005073; }
+  color: #d0efff; }
   .pj-project__company--link, .pj-project__company--link:link, .pj-project__company--link:visited {
     color: #420D09;
     margin: 0.5rem 0; }

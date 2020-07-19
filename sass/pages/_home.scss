@@ -15,13 +15,13 @@
 }
 
 .sect__about{
-    background-image: linear-gradient(to right bottom, rgba(#23120B,.4),rgba(#5A3825,.4)),
-    url(../img/about.jpg);background-size: cover;
+    background-color:$c-brown-2;
 }
 .about__box{
-    background-image: url(../img/about.jpg);
+    background-color:$c-brown-1;
     background-size:cover;
     padding: 2rem;
+    border-radius: 4px;
 }
 .li__about{
     margin-top:1rem;
@@ -37,7 +37,7 @@
 .sect__feedback{
     //background-image:url(../img/feedback.jpg);
     //background-size:cover;
-    background-image: linear-gradient(to right bottom, $c-white, $c-brown-2);
+    background-image: linear-gradient(to right bottom, rgba($c-brown-1,.4),rgba($c-brown-2,.4));
 }
 .feedback--box{
 margin-bottom: 3rem;
@@ -70,7 +70,8 @@ margin-bottom: 3rem;
     height:100%;
 }
 .footer{
-    background-image:url(../img/contact.jpg);
+    //background-image:url(../img/contact.jpg);
+    background-image: linear-gradient(to right bottom, rgba($c-pink-1,.2),rgba($c-tiger,.3));
 }
 
 .contact__img{
