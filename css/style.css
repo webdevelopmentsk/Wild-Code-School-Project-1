@@ -54,8 +54,12 @@ a {
     text-transform: uppercase; }
   .heading--h2 {
     font-size: 3.5rem;
-    font-weight: 600;
-    color: #000000; }
+    font-weight: 600; }
+    .heading--h2--light {
+      color: #FFFFFF;
+      font-size: 2.1rem; }
+    .heading--h2--dark {
+      color: #000000; }
   .heading--h5 {
     font-size: 1rem;
     color: #000000;
@@ -113,6 +117,9 @@ a {
 .u-margin-left-big {
   margin-left: 5rem; }
 
+.u-margin-left-medium {
+  margin-left: 3rem; }
+
 .container {
   width: 100vw;
   display: flex;
@@ -131,7 +138,7 @@ a {
     flex: 0 1 100%;
     align-self: center; }
   .header-home {
-    height: 85vh; }
+    height: 90vh; }
   .header-feedback {
     height: 75vh; }
   .header-project {
@@ -147,17 +154,23 @@ a {
 .sect__about {
   flex: 0 1 100%;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: flex-start; }
 
-.about__box {
-  flex: 0 0 28%;
+.about__box--1 {
+  flex: 0 0 30%;
   height: auto;
+  display: flex;
+  flex-direction: column; }
+
+.about__box--2 {
+  flex: 1 0 30%; }
+
+.about__box--3 {
+  flex: 1 0 30%;
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.aboutus__box {
-  flex: 0 0 35%; }
 
 .sect__feedback {
   flex: 0 1 100%; }
@@ -324,7 +337,7 @@ a {
 
 .btn--black {
   font-size: 2rem;
-  background-color: #555251;
+  background-color: #313335;
   color: #FFFFFF;
   box-shadow: 0 0.5rem 1rem rgba(85, 82, 81, 0.2);
   border-radius: 20px; }
@@ -451,23 +464,36 @@ a {
   transform: translateY(3px); }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 10, 21, 0.3)), url(../img/ben-kolde-bs2Ba7t69mM-unsplash.jpg);
+  background-image: url(../img/ben-kolde-bs2Ba7t69mM-unsplash.jpg);
   background-size: cover; }
   .header__box {
-    text-align: center; }
+    text-align: center;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.4), rgba(0, 10, 21, 0.3)); }
   .header__text {
     font-size: 2rem;
     color: #FFFFFF;
     margin: 2rem 0; }
 
-.about__box {
-  padding: 2rem;
-  border-radius: 4px;
+.sect__about {
+  background-color: #FFFFFF;
+  padding: 7rem 0; }
+
+.about__box--1 {
+  background-color: #FFFFFF;
   margin: 0 3rem; }
 
-.aboutus__box {
-  padding: 2rem;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(185, 153, 118, 0.3)), url(../img/about.jpg); }
+.about__box--2 {
+  background-color: #000000;
+  padding: 0 3rem; }
+
+.about__box--3 {
+  background-color: #FFB6C1; }
+
+.about__box__btn-container {
+  margin: 0 2rem; }
+
+.about__box:hover {
+  transform: scale(1.05); }
 
 .li__about {
   margin-top: 1rem; }
@@ -479,8 +505,8 @@ a {
     width: 100%; }
 
 .sect__feedback {
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)), url(../img/feedback.jpg);
-  background-size: cover; }
+  padding: 5rem 0;
+  background-color: #ce897b; }
 
 .feedback--box {
   margin-bottom: 3rem; }
@@ -488,7 +514,9 @@ a {
 .feedback--card {
   padding: 0 2rem;
   margin: 3rem 3rem;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.5); }
+  border: 4px solid #FFE6EE;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8); }
   .feedback--card__photo-box {
     width: 15rem;
     height: 15rem;
@@ -507,13 +535,16 @@ a {
 .student__img {
   height: 100%; }
 
+.footer {
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(236, 219, 195, 0.4)), url(../img/contact.jpg);
+  background-size: cover; }
+
 .contact__img {
   width: 100%; }
 
 .contact--card {
   padding: 2rem 2rem;
-  margin: 3rem 3rem;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.5); }
+  margin: 3rem 3rem; }
   .contact--card__photo-box {
     width: 15rem;
     height: 15rem;
