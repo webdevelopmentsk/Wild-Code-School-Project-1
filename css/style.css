@@ -831,7 +831,7 @@ a {
   padding: 1.5rem;
   display: flex; }
   .pj-project__card:hover {
-    transform: scale(1.05); }
+    transform: translateY(-3px); }
 
 .pj-project__detail {
   color: #420D09;
@@ -874,7 +874,7 @@ a {
   border-radius: 4px; }
 
 .pj-project__img {
-  height: 35%;
+  width: 80%;
   border-radius: 3px;
   overflow: hidden; }
   .pj-project__img--content {

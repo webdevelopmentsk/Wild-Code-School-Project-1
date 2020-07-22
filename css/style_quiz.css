@@ -1,0 +1,69 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.quizGame{
+    align-self: center;
+    width: 80%;
+    height: 100%;
+    background-image: url(../img/bg-quizgame.jpg);
+    background-size: cover;
+    font-size: 1.5rem;
+    
+}
+.newGame{
+
+    width: 30%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-decoration:none;
+    font-family:'Montserrat',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color: #000000;
+    text-align:center;
+    transition: all 0.2s;
+}
+.newGame:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+}
+.score__text{
+    padding: 1rem;
+    margin: 0.1rem 1rem;
+    color: #FBEEC1;
+    font-weight: 800;
+}
+.question__text{
+    background-color: #8D8741;
+    padding: 2rem;
+    height: 30%;
+    color: #FBEEC1;
+}
+.choices{
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.result{
+    background-color: #DAAD86;
+    padding: 1rem 0;
+    text-align: center;
+}
+.btn-choice{
+    background-color: #FBEEC1;
+    border-radius: 3px;
+    border: 1px solid #FBEEC1;
+    cursor: pointer;
+    color: #8D8741;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    padding: 0.7rem 0.7rem;
+    display: block;
+    margin-bottom: 0.8rem;
+    width: 40%;
+}
