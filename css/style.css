@@ -179,11 +179,10 @@ a {
   width: 100vw;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: flex-start; }
+  flex-wrap: wrap; }
 
 .feedback--card {
-  flex: 0 45%;
+  flex: 0 25%;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -463,6 +462,53 @@ a {
 .btn-seemore-project:active, .btn-seemore-project:focus {
   transform: translateY(3px); }
 
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .composition__photo {
+        float: left;
+        position: relative;
+        width: 33.33333333%;
+        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .composition__photo--p1 {
+          top: 0;
+          transform: scale(1.2); } }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .composition__photo--p2 {
+          top: -1rem;
+          transform: scale(1.3);
+          z-index: 100; } }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+      @media only screen and (max-width: 56.25em) {
+        .composition__photo--p3 {
+          top: 1rem;
+          left: 0;
+          transform: scale(1.1); } }
+    .composition__photo:hover {
+      outline: 1.5rem solid #B99976;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
 .header {
   background-image: url(../img/ben-kolde-bs2Ba7t69mM-unsplash.jpg);
   background-size: cover; }
@@ -513,7 +559,7 @@ a {
 
 .feedback--card {
   padding: 0 2rem;
-  margin: 3rem 3rem;
+  margin: 2rem 2rem;
   border: 4px solid #FFE6EE;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.8); }
@@ -534,6 +580,9 @@ a {
 
 .student__img {
   height: 100%; }
+
+.seeMoreFeedBacks {
+  text-align: center; }
 
 .footer {
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(236, 219, 195, 0.4)), url(../img/contact.jpg);
@@ -683,7 +732,7 @@ a {
   background-image: url(../img/sawi-about-2.jpg);
   padding: 5rem 0; }
   .sect__about-sawi__box {
-    flex: 0 1 25%;
+    flex: 0 1 20%;
     height: 35rem;
     font-size: 3rem;
     color: #000a15;
@@ -709,37 +758,35 @@ a {
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start; }
+  justify-content: space-evenly; }
 
 .sect__havedone__head {
-  flex: 0 1 25%;
+  flex: 0 0 50%;
   background-color: #B99976;
   display: flex;
-  justify-content: space-evenly;
-  margin: 7rem 0;
+  margin: 4rem 0;
   outline: 1.5rem solid #987554;
   outline-offset: 15px;
-  padding: 3rem; }
+  padding: 2rem;
+  align-self: center; }
   .sect__havedone__head:hover {
     transform: scale(1.05); }
 
 .project__card {
-  flex: 0 0 27%;
-  height: auto;
+  flex: 0 0 70%;
   background-image: linear-gradient(to right bottom, #987554, #B99976);
-  margin: 3rem 2rem;
-  height: auto;
+  margin: 3rem 0;
   border-radius: 3px;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
   padding: 1.5rem;
-  display: flex; }
+  display: flex;
+  justify-content: space-evenly; }
   .project__card:hover {
     transform: scale(1.05); }
 
 .project__detail {
   color: #ecdbc3;
-  flex: 0 0 100%;
+  flex: 0 0 50%;
   padding: 2rem 2rem;
   display: flex;
   flex-direction: column; }
@@ -781,11 +828,15 @@ a {
   border-radius: 4px; }
 
 .project__img {
-  height: 35%;
-  border-radius: 3px;
-  overflow: hidden; }
+  align-self: center;
+  flex: 0 0 45%; }
   .project__img--content {
-    width: 100%; }
+    width: 100%;
+    height: 80%; }
+
+.sect__painting {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 90vh; }
 
 .header-feedback {
   font-family: 'Comfortaa', cursive;

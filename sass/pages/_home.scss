@@ -64,7 +64,7 @@ margin-bottom: 3rem;
 }
 .feedback--card{
     padding: 0 2rem;
-    margin: 3rem 3rem;
+    margin: 2rem 2rem;
     border: 4px solid $c-pink-2;
     border-radius: 5px;
     background-color: rgba($c-white,.8);
@@ -89,6 +89,10 @@ margin-bottom: 3rem;
 }
 .student__img{
     height:100%;
+}
+.seeMoreFeedBacks{
+    text-align: center;
+
 }
 .footer{
     background-image: linear-gradient(to right bottom, rgba($c-white,.6),rgba($c-brown-1,.4)),
