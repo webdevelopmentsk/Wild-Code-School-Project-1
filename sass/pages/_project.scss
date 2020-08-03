@@ -26,6 +26,9 @@
         &:hover{
             transform: translateY(-3px);
         }
+        @include respond(phone) {
+            flex: 0 0 90%;
+        }
     }
     &__detail{
         color: $c-mahogany;

@@ -15,7 +15,6 @@
     flex: 0 1 100%;
     display: flex;
     justify-content: center;
-
     &__box{
     flex: 0 1 100%;
     align-self: center;
@@ -46,20 +45,12 @@
     justify-content: flex-start;
 }
 .about__box{
-    &--1{
-        flex: 0 0 30%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    &--2{
-        flex: 1 0 30%;
-    }
-    &--3{
-        flex: 1 0 30%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include respond(phone) {
+        flex: 1 1 100%;
     }
 }
 .sect__feedback{
@@ -77,6 +68,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include respond(phone) {
+        flex: 1 1 100%;
+    }
 }
 .student__img{
     height:100%;
@@ -85,19 +79,25 @@
 .footer
 {
     width: 100%;
+    height: auto;
 }
 .sect__contact{
     width: 100%;
+
 }
 .contact--box{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .contact--card{
-    flex: 0 1 35%;
+    flex: 0 0 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include respond(phone) {
+        flex: 0 0 100%;
+    }
 }
 

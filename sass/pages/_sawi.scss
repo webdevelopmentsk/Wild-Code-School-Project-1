@@ -33,9 +33,6 @@
             display: none;
             }
         }
-        &--2{
-            
-        }
         &--3{
             @include respond(tab-port){
                 display: none;
@@ -190,6 +187,11 @@
         &:hover{
             transform: scale(1.05);
         }
+        @include respond(phone){
+           flex-direction: column;
+           justify-content: flex-start;
+           height: auto;
+        }
     }
     &__detail{
         color: $c-brown-1;
@@ -197,6 +199,9 @@
         padding: 2rem 2rem;
         display: flex;
         flex-direction: column;
+        @include respond(phone){
+            flex: 0 0 45%;
+        }
     }
     &__name{
         font-size: 2rem;
@@ -243,9 +248,19 @@
         flex: 0 0 45%;
         border-radius: 10px;
         overflow: hidden;
+
         &--content{
             width: 100%;
-            height: 80%;
+            height: 70%;
+            @include respond(phone){
+                width: 100%;
+                height: 70%;
+                margin: 0 auto;
+            }
+        }
+        @include respond(phone){
+            flex: 0 0 35%;
+            border-radius:0;
         }
     }
 }
@@ -255,11 +270,18 @@
     background-color: rgba($c-white,0.1);
     display: flex;
     padding: 0 0;
+    @include respond(phone){
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
     &-1{
         flex:0 0 50%;
         background-color: $c-pink-5;
         padding: 0 4rem;
         height: 45rem;
+        @include respond(phone){
+            background-color: $c-white;
+        }
     }
     &-2{
         flex:0 0 50%;
@@ -267,18 +289,16 @@
         padding: 4rem 5rem;
     }
 }
-.li__paint{
 
-}
-.a__paint{
-    text-decoration: none;
-    color:$c-black-1;
-}
 .sect__traveling{
     flex: 0 0 100%;
     background-color: rgba($c-white,0.1);
     display: flex;
     padding: 0 0;
+    @include respond(phone){
+        flex-direction: column;
+        background-color: $c-black-1;
+    }
     &-1{
         flex:0 0 50%;
         background-color: $c-black-1;
@@ -289,6 +309,9 @@
         margin-top: 3rem;
         flex:0 0 50%;
         padding: 4rem 5rem;
+        @include respond(phone){
+            flex:0 0 20%;
+        }
     }
 }
 

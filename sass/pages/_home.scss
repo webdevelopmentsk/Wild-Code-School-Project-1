@@ -6,6 +6,10 @@
     &__box{
     text-align: center; 
     background-image: linear-gradient(to right bottom, rgba($c-black-1,.4),rgba($c-black-2,.3));
+    @include respond(phone) {
+        padding: 2rem;
+    }
+
     }
     &__text{
     font-size: 2rem;
@@ -18,15 +22,18 @@
 .sect__about{
     background-color:$c-white;
     padding: 7rem 0;
+    @include respond(phone) {
+        padding: 7rem 2rem;
+    }
 }
 .about__box{
+    padding: 3rem 3rem;
     &--1{
     background-color:$c-white;
-    margin: 0 3rem;
+
     }
     &--2{
         background-color:$c-black-1;
-        padding: 0 3rem;
     }
     &--3{
         background-color:$c-pink-1;
