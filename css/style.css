@@ -122,6 +122,12 @@ a {
 .u-margin-left-medium {
   margin-left: 3rem; }
 
+.u-font-2rem {
+  font-size: 2rem; }
+
+.u-padding-b-2rem {
+  padding-bottom: 2rem; }
+
 .container {
   width: 100vw;
   display: flex;
@@ -569,40 +575,6 @@ a {
   .front-end__photo--content {
     width: 100%; }
 
-.sect__feedback {
-  padding: 5rem 0;
-  background-color: #ce897b; }
-
-.feedback--box {
-  margin-bottom: 3rem; }
-
-.feedback--card {
-  padding: 0 2rem;
-  margin: 2rem 2rem;
-  border: 4px solid #FFE6EE;
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.8); }
-  .feedback--card__photo-box {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 2rem 0; }
-  .feedback--card__name {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 2rem; }
-  .feedback--card__text {
-    font-size: 1.5rem; }
-  .feedback--card:hover {
-    transform: translateY(-3px) scale(1.1); }
-
-.student__img {
-  height: 100%; }
-
-.seeMoreFeedBacks {
-  text-align: center; }
-
 .footer {
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(236, 219, 195, 0.4)), url(../img/contact.jpg);
   background-size: cover; }
@@ -626,7 +598,8 @@ a {
   .contact--card__text {
     font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    padding-bottom: 1rem; }
   .contact--card:hover {
     transform: translateY(-3px) scale(1.1); }
 
@@ -765,7 +738,7 @@ a {
       justify-content: center; }
     @media only screen and (max-width: 37.5em) {
       .sect__about-sawi__box--1, .sect__about-sawi__box--2, .sect__about-sawi__box--3, .sect__about-sawi__box--4 {
-        flex: 0 1 100%; } }
+        flex: 0 1 70%; } }
     .sect__about-sawi__box--1 {
       background-color: #987554; }
 
@@ -862,15 +835,9 @@ a {
   .project__img--content {
     width: 100%;
     height: 70%; }
-    @media only screen and (max-width: 37.5em) {
-      .project__img--content {
-        width: 100%;
-        height: 70%;
-        margin: 0 auto; } }
   @media only screen and (max-width: 37.5em) {
     .project__img {
-      flex: 0 0 35%;
-      border-radius: 0; } }
+      display: none; } }
 
 .sect__painting {
   flex: 0 0 100%;
@@ -935,6 +902,45 @@ a {
 
 .sect__feedback--feedback {
   background-image: linear-gradient(to right bottom, #FFFFFF, #ecdbc3); }
+
+.sect__feedback {
+  padding: 5rem 0;
+  background-color: #ce897b; }
+
+.feedback--box {
+  margin-bottom: 3rem; }
+
+.feedback--card {
+  padding: 2rem 2rem;
+  margin: 2rem 2rem;
+  border: 4px solid #FFE6EE;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8); }
+  .feedback--card__photo-box {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 2rem 0; }
+  .feedback--card__name {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem; }
+  .feedback--card__text {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: justify; }
+  .feedback--card:hover {
+    transform: translateY(-3px) scale(1.1); }
+
+.student__img {
+  height: 100%; }
+
+.seeMoreFeedBacks {
+  text-align: center; }
+
+#more {
+  display: none; }
 
 .header-project {
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 10, 21, 0.4)), url(../img/project-header.jpg);
