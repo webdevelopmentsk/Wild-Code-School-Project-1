@@ -16,6 +16,7 @@ body {
     height: auto;
     padding: 300px;
     text-align: center;
+    /* Avoid presenting informational images in CSS backgrounds, so, no alt attribute on the next image*/
     background-image: url("../img/carlos1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
