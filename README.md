@@ -9,7 +9,6 @@ Home Page:
 index.html
 
 Folders:
-- Contents: contains information about the project;
 - css: contains stying code in css;
 - img: contains images and videos;
 - js: contains files realted to JavaScript;
