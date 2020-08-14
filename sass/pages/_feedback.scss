@@ -39,6 +39,10 @@ margin-bottom: 3rem;
     border: 4px solid $c-pink-2;
     border-radius: 5px;
     background-color: rgba($c-white,.8);
+    @include respond(phone) {
+        margin: 3rem 6rem;
+    }
+
     &__photo-box{
         width: 15rem;
         height: 15rem;
