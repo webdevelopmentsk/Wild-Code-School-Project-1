@@ -1,6 +1,14 @@
 # Wild-Code-School-Project-1 
+Objectives:
+- Create a website that gives the feedback from students who joined the front-end developer course
+at Wild Code School
+- Encourage people to learn and know more about front-end development
+- Give people who love coding a platform to connect with students from Wild Code School
+
+Home Page:
+index.html
+
 Folders:
-- Contents: contains information about the project;
 - css: contains stying code in css;
 - img: contains images and videos;
 - js: contains files realted to JavaScript;
@@ -9,8 +17,8 @@ Folders:
 - sass: contains scss code for the website;
 
 In sass folder:
-- _animation.scss: contains code for animations;
-- _base.scss: contain basic code that is utilized by the whole website;
+- _animation: contains code for animations;
+- _base: contain basic code that is utilized by the whole website;
    Ex. Font size of texts, Universal settings; 
 - _components: contain code for buttons and links;
 - _layout: contain code for flexbox for the whole website;
