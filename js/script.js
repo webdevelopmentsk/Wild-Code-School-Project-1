@@ -1,6 +1,7 @@
-function readMore(id) {
-    let dots = document.getElementById("dots");
-    let moreText = document.getElementById("more");
+function readMore(id,dotID,moreID) {
+    console.log(id,dotID,moreID);
+    let dots = document.getElementById(dotID);
+    let moreText = document.getElementById(moreID);
     let el = document.getElementById(id);
   
     if (dots.style.display === "none") {
