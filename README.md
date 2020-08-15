@@ -1,5 +1,5 @@
 # Wild-Code-School-Project-1 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Yaktocat](https://github.com/webdevelopmentsk/Wild-Code-School-Project-1/blob/master/img/mainpage.png)
 
 Description:
 This website is created by Sawitree Kalakul and Carlos Teixeira. It is our first project at Wild Code School.
