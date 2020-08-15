@@ -1,4 +1,8 @@
 # Wild-Code-School-Project-1 
+Description:
+This website is created by Sawitree Kalakul and Carlos Teixeira. It is our first project at Wild Code School.
+We created this in order to practice collarboration in Git/GitHub.
+
 Objectives:
 - Create a website that gives the feedback from students who joined the front-end developer course
 at Wild Code School
